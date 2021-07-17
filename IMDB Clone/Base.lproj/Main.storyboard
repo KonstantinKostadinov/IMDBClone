@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTy-Nl-5j3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="topMovieCellIdentifier" rowHeight="80" id="r6F-EZ-3c8" customClass="TopMovieTableViewCell" customModule="IMDB_Clone" customModuleProvider="target">
@@ -71,24 +71,74 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-zI-UCz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
+                                <segments>
+                                    <segment title="Top 250 Movies"/>
+                                    <segment title="Top 250 TVs"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="dH5-Bo-cTQ"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aTy-Nl-5j3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Jx-da-9iI"/>
+                            <constraint firstItem="8E7-zI-UCz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3ey-IO-Us0"/>
                             <constraint firstItem="aTy-Nl-5j3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DUi-NM-huY"/>
+                            <constraint firstItem="aTy-Nl-5j3" firstAttribute="top" secondItem="8E7-zI-UCz" secondAttribute="bottom" id="K04-a0-51i"/>
+                            <constraint firstItem="8E7-zI-UCz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SZc-Hc-vad"/>
+                            <constraint firstItem="8E7-zI-UCz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UOd-b0-5IE"/>
                             <constraint firstItem="aTy-Nl-5j3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="njm-IO-SeJ"/>
                             <constraint firstItem="aTy-Nl-5j3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u80-HQ-HCB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SBG-7Y-HJ2"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="8E7-zI-UCz" id="njU-E4-Bcp"/>
                         <outlet property="tableView" destination="aTy-Nl-5j3" id="1bn-Ju-OYd"/>
+                        <segue destination="ss6-j0-xZE" kind="show" identifier="toPresentTopMovieSegue" id="bgc-Ok-EPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="65.625"/>
+        </scene>
+        <!--Present Top Movie Trailer View Controller-->
+        <scene sceneID="boe-Qt-G9p">
+            <objects>
+                <viewController id="ss6-j0-xZE" customClass="PresentTopMovieTrailerViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hV-XU-Zka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zST-qW-EWk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HwZ-uI-pti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="top" secondItem="HwZ-uI-pti" secondAttribute="top" id="HRR-TS-MHd"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="aCO-du-XzR"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="j3S-9O-dkt"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="bottom" secondItem="HwZ-uI-pti" secondAttribute="bottom" id="nNq-WX-qVV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8bT-0w-9yx"/>
+                    <connections>
+                        <outlet property="textView" destination="zST-qW-EWk" id="KrK-f2-WTX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8B8-gC-Vgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2811.594202898551" y="65.625"/>
         </scene>
         <!--Item-->
         <scene sceneID="efm-TX-jsL">
@@ -147,6 +197,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
