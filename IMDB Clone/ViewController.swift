@@ -11,7 +11,7 @@ import Kingfisher
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var moviesDict: Array<[String:Any]> = Array<[String:Any]>()
+    var moviesDict: [TopMovies] = [TopMovies]()
     private enum Constants {
         static let titleName = "Top 250 Movies"
         static let topMovieCellIdentifier = "topMovieCellIdentifier"
@@ -20,13 +20,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupViews()
-        RequestManager.fetchTopMovies { (moviesDict, error) in
+        RequestManager.fetchTopMovies { (moviesArray, error) in
             if let error = error {
                 print("error: ", error.localizedDescription)
                 return
             }
-            guard let items = moviesDict?["items"] as? Array<[String:Any]> else { return }
-            self.moviesDict = items
+            guard let movies = moviesArray else { return }
+            self.moviesDict = movies
             self.tableView.reloadData()
         }
     }
@@ -48,12 +48,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let topMovieCell = tableView.dequeueReusableCell(withIdentifier: Constants.topMovieCellIdentifier) as? TopMovieTableViewCell else {
             return UITableViewCell()
         }
-        
+
         let movie = moviesDict[indexPath.row]
-        let imageURL = URL(string: movie["image"] as? String ?? "")
+        let imageURL = URL(string: movie.image)
         topMovieCell.imageImageView.kf.setImage(with: imageURL)
-        topMovieCell.titleLabel.text = movie["title"] as? String ?? ""
-        topMovieCell.ratingAndYearLabel.text = "Year: \(movie["year"] ?? ""), imdbRating: \(movie["imDbRating"] ?? "")"
+        topMovieCell.titleLabel.text = movie.title
+        topMovieCell.ratingAndYearLabel.text = "Year: \(movie.year), imdbRating: \(movie.imDbRating)"
         return topMovieCell
     }
 
