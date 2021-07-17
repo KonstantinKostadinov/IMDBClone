@@ -27,6 +27,9 @@
 		E53C570126A30E6300940E76 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570026A30E6300940E76 /* LoadingViewController.swift */; };
 		E53C570326A30F4100940E76 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570226A30F4100940E76 /* SyncManager.swift */; };
 		E53C570526A30F6D00940E76 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570426A30F6D00940E76 /* LocalDataManager.swift */; };
+		E53C570726A3182D00940E76 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570626A3182D00940E76 /* Trailer.swift */; };
+		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
+		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		E53C570026A30E6300940E76 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		E53C570226A30F4100940E76 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
 		E53C570426A30F6D00940E76 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		E53C570626A3182D00940E76 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
+		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,6 @@
 				E53C56DE26A2EF4C00940E76 /* Managers */,
 				E53C56CA26A2ED4800940E76 /* AppDelegate.swift */,
 				E53C56CC26A2ED4800940E76 /* SceneDelegate.swift */,
-				E53C56CE26A2ED4800940E76 /* ViewController.swift */,
 				E53C56D026A2ED4800940E76 /* Main.storyboard */,
 				E53C56D326A2ED4A00940E76 /* Assets.xcassets */,
 				E53C56D526A2ED4A00940E76 /* LaunchScreen.storyboard */,
@@ -161,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				E53C56F726A307BE00940E76 /* TopMovies.swift */,
+				E53C570626A3182D00940E76 /* Trailer.swift */,
+				E53C570B26A3241D00940E76 /* TopTVs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,9 +175,19 @@
 		E53C56FF26A30E4D00940E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E53C570826A31D4B00940E76 /* Top250Movies */,
 				E53C570026A30E6300940E76 /* LoadingViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E53C570826A31D4B00940E76 /* Top250Movies */ = {
+			isa = PBXGroup;
+			children = (
+				E53C56CE26A2ED4800940E76 /* ViewController.swift */,
+				E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */,
+			);
+			path = Top250Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +320,13 @@
 				E53C56FE26A30DD100940E76 /* UIViewControllerExtensions.swift in Sources */,
 				E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */,
 				E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */,
+				E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */,
 				E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */,
+				E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */,
 				E53C570526A30F6D00940E76 /* LocalDataManager.swift in Sources */,
 				E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */,
 				E53C570126A30E6300940E76 /* LoadingViewController.swift in Sources */,
+				E53C570726A3182D00940E76 /* Trailer.swift in Sources */,
 				E53C570326A30F4100940E76 /* SyncManager.swift in Sources */,
 				E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */,
 				E53C56EB26A2FB4800940E76 /* TopMovieTableViewCell.swift in Sources */,

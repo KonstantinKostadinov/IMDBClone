@@ -65,4 +65,9 @@ class LocalDataManager {
             }
         }
     }
+    
+    class func addData<T: Object>(_ data: T, update: Bool = true, realm: Realm = LocalDataManager.realm ) {
+        addData([data], update: update, realm: realm)
+    }
+
 }
