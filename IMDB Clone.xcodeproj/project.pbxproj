@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8CBA46DAB4C85D549EEE22E /* Pods_IMDB_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */; };
 		E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56CA26A2ED4800940E76 /* AppDelegate.swift */; };
 		E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56CC26A2ED4800940E76 /* SceneDelegate.swift */; };
 		E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56CE26A2ED4800940E76 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMDB_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63CC57612BF388F804CEF19 /* Pods-IMDB Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB Clone.release.xcconfig"; path = "Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone.release.xcconfig"; sourceTree = "<group>"; };
+		CBD1C887798D14282ADF872A /* Pods-IMDB Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB Clone.debug.xcconfig"; path = "Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		E53C56C726A2ED4800940E76 /* IMDB Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDB Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53C56CA26A2ED4800940E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E53C56CC26A2ED4800940E76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53C56E326A2F08B00940E76 /* Alamofire in Frameworks */,
+				A8CBA46DAB4C85D549EEE22E /* Pods_IMDB_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E65BB9879F5774A8187A584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1C887798D14282ADF872A /* Pods-IMDB Clone.debug.xcconfig */,
+				B63CC57612BF388F804CEF19 /* Pods-IMDB Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E262A26AFF850EA8F157E7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E53C56BE26A2ED4800940E76 = {
 			isa = PBXGroup;
 			children = (
 				E53C56C926A2ED4800940E76 /* IMDB Clone */,
 				E53C56C826A2ED4800940E76 /* Products */,
+				4E65BB9879F5774A8187A584 /* Pods */,
+				8E262A26AFF850EA8F157E7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +111,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53C56DB26A2ED4A00940E76 /* Build configuration list for PBXNativeTarget "IMDB Clone" */;
 			buildPhases = (
+				E53C56E726A2F4E100940E76 /* ShellScript */,
+				036DA69A00E5299EDD2719D1 /* [CP] Check Pods Manifest.lock */,
 				E53C56C326A2ED4800940E76 /* Sources */,
 				E53C56C426A2ED4800940E76 /* Frameworks */,
 				E53C56C526A2ED4800940E76 /* Resources */,
@@ -150,6 +176,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		036DA69A00E5299EDD2719D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMDB Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53C56E726A2F4E100940E76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E53C56C326A2ED4800940E76 /* Sources */ = {
@@ -303,6 +371,7 @@
 		};
 		E53C56DC26A2ED4A00940E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD1C887798D14282ADF872A /* Pods-IMDB Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +391,7 @@
 		};
 		E53C56DD26A2ED4A00940E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63CC57612BF388F804CEF19 /* Pods-IMDB Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +438,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.3;
+				minimumVersion = 4.9.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

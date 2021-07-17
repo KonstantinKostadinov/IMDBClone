@@ -12,8 +12,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        RequestManager.fetchTopMovies { (moviesDict, error) in
+            if let error = error {
+                print("error: ", error.localizedDescription)
+                return
+            }
+            print("MOvies Dictionary: ", moviesDict)
+        }
     }
 
-
+    
 }
 
