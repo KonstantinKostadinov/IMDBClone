@@ -40,11 +40,10 @@ extension API {
     static let topTVs = API("Top250TVs/k_2y9cl6jb")
 }
 
-
 class RequestManager: NSObject {
     static let standard = RequestManager()
 
-    class func fetchTopMovies(completion: ((_ dict: [String: Any?]?, _ error: Error?) -> Void)? = nil) {
+    class func fetchTopMovies(completion: ((_ dict: [TopMovies]?, _ error: Error?) -> Void)? = nil) {
         Alamofire.request(API.topMovies, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             guard response.error == nil else {
                 completion?(nil, response.error)
@@ -56,11 +55,13 @@ class RequestManager: NSObject {
                 return
             }
 
-            guard let dict = response.result.value as? [String:Any] else {
+            guard let dict = response.result.value as? [String:Any],
+                  let movieItems = dict["items"] as? Array<[String:Any]> else {
                 completion?(nil, IMDBError.cannotParseJSON)
                 return
             }
-            completion?(dict, nil)
+            let movies = movieItems.compactMap({TopMovies(value: $0)})
+            completion?(movies, nil)
         }
     }
 }

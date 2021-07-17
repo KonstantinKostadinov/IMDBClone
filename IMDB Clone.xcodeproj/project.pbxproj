@@ -19,6 +19,9 @@
 		E53C56EB26A2FB4800940E76 /* TopMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */; };
 		E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56ED26A3043000940E76 /* URLExtensions.swift */; };
 		E53C56F126A3059800940E76 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F026A3059800940E76 /* Kingfisher */; };
+		E53C56F426A307A600940E76 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F326A307A600940E76 /* Realm */; };
+		E53C56F626A307A600940E76 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F526A307A600940E76 /* RealmSwift */; };
+		E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56F726A307BE00940E76 /* TopMovies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,7 @@
 		E53C56DF26A2EF6000940E76 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovieTableViewCell.swift; sourceTree = "<group>"; };
 		E53C56ED26A3043000940E76 /* URLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		E53C56F726A307BE00940E76 /* TopMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			files = (
 				E53C56F126A3059800940E76 /* Kingfisher in Frameworks */,
 				E53C56E326A2F08B00940E76 /* Alamofire in Frameworks */,
+				E53C56F426A307A600940E76 /* Realm in Frameworks */,
+				E53C56F626A307A600940E76 /* RealmSwift in Frameworks */,
 				A8CBA46DAB4C85D549EEE22E /* Pods_IMDB_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +96,7 @@
 		E53C56C926A2ED4800940E76 /* IMDB Clone */ = {
 			isa = PBXGroup;
 			children = (
+				E53C56F926A307CC00940E76 /* Models */,
 				E53C56EC26A3042000940E76 /* Extensions */,
 				E53C56E826A2FB2100940E76 /* Views */,
 				E53C56DE26A2EF4C00940E76 /* Managers */,
@@ -136,6 +143,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E53C56F926A307CC00940E76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E53C56F726A307BE00940E76 /* TopMovies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +172,8 @@
 			packageProductDependencies = (
 				E53C56E226A2F08B00940E76 /* Alamofire */,
 				E53C56F026A3059800940E76 /* Kingfisher */,
+				E53C56F326A307A600940E76 /* Realm */,
+				E53C56F526A307A600940E76 /* RealmSwift */,
 			);
 			productName = "IMDB Clone";
 			productReference = E53C56C726A2ED4800940E76 /* IMDB Clone.app */;
@@ -188,6 +205,7 @@
 			packageReferences = (
 				E53C56E126A2F08B00940E76 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				E53C56EF26A3059800940E76 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = E53C56C826A2ED4800940E76 /* Products */;
 			projectDirPath = "";
@@ -260,6 +278,7 @@
 			files = (
 				E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */,
 				E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */,
+				E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */,
 				E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */,
 				E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */,
 				E53C56EB26A2FB4800940E76 /* TopMovieTableViewCell.swift in Sources */,
@@ -485,6 +504,14 @@
 				minimumVersion = 6.3.0;
 			};
 		};
+		E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -497,6 +524,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E53C56EF26A3059800940E76 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		E53C56F326A307A600940E76 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E53C56F526A307A600940E76 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
