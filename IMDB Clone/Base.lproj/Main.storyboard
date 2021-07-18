@@ -54,11 +54,10 @@
                                                         <constraint firstAttribute="height" constant="58" id="zDI-8I-jK9"/>
                                                     </constraints>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-Mt-dsp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-Mt-dsp">
                                                     <rect key="frame" x="4" y="20.5" width="32" height="39"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39" id="7wX-ex-luk"/>
-                                                        <constraint firstAttribute="width" constant="32" id="TPF-d1-4yG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -162,10 +161,9 @@
                                                 <constraint firstAttribute="height" constant="58" id="Lud-ML-n7q"/>
                                             </constraints>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-qf-Sqc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-qf-Sqc">
                                             <rect key="frame" x="4" y="20.5" width="32" height="39"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="32" id="eBr-vN-TEZ"/>
                                                 <constraint firstAttribute="height" constant="39" id="wHJ-nf-A08"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
