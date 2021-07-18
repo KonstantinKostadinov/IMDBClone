@@ -147,7 +147,7 @@ class RequestManager: NSObject {
     }
 
     class func fetchMostPopularTVs( completion: ((_ movies: [MostPopularTVs]?,_ error: Error?) -> Void)? = nil) {
-        Alamofire.request(API.popularMovies, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+        Alamofire.request(API.popularTVs, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             guard response.error == nil else {
                 completion?(nil, response.error)
                 return

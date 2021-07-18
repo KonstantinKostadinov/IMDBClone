@@ -11,6 +11,7 @@ class TopMovieTableViewCell: UITableViewCell {
     @IBOutlet weak var imageImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ratingAndYearLabel: UILabel!
+    @IBOutlet weak var rankLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
