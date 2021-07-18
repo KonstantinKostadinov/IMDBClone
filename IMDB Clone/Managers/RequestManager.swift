@@ -38,6 +38,8 @@ public class API: URLConvertible {
 extension API {
     static let topMovies = API("Top250Movies/k_2y9cl6jb")
     static let topTVs = API("Top250TVs/k_2y9cl6jb")
+    static let popularMovies = API("MostPopularMovies/k_2y9cl6jb")
+    static let popularTVs = API("MostPopularTVs/k_2y9cl6jb")
 }
 
 extension API {
@@ -107,19 +109,62 @@ class RequestManager: NSObject {
                     completion?(response.result.error)
                     return
                 }
-                
+
                 guard let dict = response.result.value as? [String:Any] else {
                     completion?(IMDBError.cannotParseJSON)
                     return
                 }
-                
-                
+
+
                 let trailer = Trailer(json: dict)
                 let realm = LocalDataManager.backgroundRealm(queue: updateDataQueue)
                 LocalDataManager.addData(trailer, update: true, realm: realm)
                 completion?(nil)
             }
-            
+        }
+    }
+
+    class func fetchMostPopularMovies( completion: ((_ movies: [MostPopularMovies]?,_ error: Error?) -> Void)? = nil) {
+        Alamofire.request(API.popularMovies, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            guard response.error == nil else {
+                completion?(nil, response.error)
+                return
+            }
+
+            guard response.result.error == nil else {
+                completion?(nil, response.result.error)
+                return
+            }
+
+            guard let dict = response.result.value as? [String:Any],
+                  let movieItems = dict["items"] as? Array<[String:Any]> else {
+                completion?(nil, IMDBError.cannotParseJSON)
+                return
+            }
+            let popularMovies = movieItems.compactMap({MostPopularMovies(value: $0)})
+            completion?(popularMovies, nil)
+        }
+    }
+
+    class func fetchMostPopularTVs( completion: ((_ movies: [MostPopularTVs]?,_ error: Error?) -> Void)? = nil) {
+        Alamofire.request(API.popularMovies, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            guard response.error == nil else {
+                completion?(nil, response.error)
+                return
+            }
+
+            guard response.result.error == nil else {
+                completion?(nil, response.result.error)
+                return
+            }
+
+            guard let dict = response.result.value as? [String:Any],
+                  let movieItems = dict["items"] as? Array<[String:Any]> else {
+                completion?(nil, IMDBError.cannotParseJSON)
+                return
+            }
+            let popularTVs = movieItems.compactMap({MostPopularTVs(value: $0)})
+            completion?(popularTVs, nil)
         }
     }
 }

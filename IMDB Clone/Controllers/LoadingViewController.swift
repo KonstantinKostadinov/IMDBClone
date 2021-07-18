@@ -19,7 +19,7 @@ class LoadingViewController: UIViewController {
     }
     
     private func fetchMovies() {
-        SyncManager.syncTopTVsAndMovies {_ in
+        SyncManager.syncTopTVsAndMovies { (_) in
             self.dismissHUD(isAnimated: true)
             self.performSegue(withIdentifier: Constants.segue, sender: nil)
         }

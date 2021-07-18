@@ -32,6 +32,20 @@ class SyncManager {
             }
 
             syncGroup.wait()
+            syncGroup.enter()
+
+            SyncManager.fetchPopularMovies { (_) in
+                syncGroup.leave()
+            }
+
+            syncGroup.wait()
+            syncGroup.enter()
+
+            SyncManager.fetchPopularTVs { (_) in
+                syncGroup.leave()
+            }
+
+            syncGroup.wait()
 
             DispatchQueue.main.async {
                 print("🔄 Data sync completed \(Date())")
@@ -39,6 +53,7 @@ class SyncManager {
             }
         }
     }
+
     class func fetchTopMovies(completion: ((_ successful: Bool) -> Void)?) {
         RequestManager.fetchTopMovies { (moviesArray, error) in
             guard error == nil, let fetchedMoviesArray = moviesArray else {
@@ -98,6 +113,71 @@ class SyncManager {
 
                 }
                 LocalDataManager.addData(topTvToWrite, update: true, realm: realm)
+                DispatchQueue.main.async {
+                    completion?(true)
+                }
+            }
+        }
+    }
+    
+    class func fetchPopularMovies(completion: ((_ successful: Bool) -> Void)?) {
+        RequestManager.fetchMostPopularMovies { (popularMoviesArray, error) in
+            guard error == nil, let fetchedMoviesArray = popularMoviesArray else {
+                completion?(false)
+                return
+            }
+
+            dataQueue.async {
+                let realm = LocalDataManager.backgroundRealm(queue: dataQueue)
+                let avaiableTopMovies = realm.objects(MostPopularMovies.self)
+                var topMoviesToWrite = [MostPopularMovies]()
+
+                for aPopularMovie in fetchedMoviesArray {
+                    let localMovie = avaiableTopMovies.filter("id == %@",aPopularMovie.id).first
+                    if let _ = localMovie {
+                        //MARK: Improve logic
+                        DispatchQueue.main.async {
+                            completion?(true)
+                        }
+                        return
+                    } else {
+                        topMoviesToWrite.append(aPopularMovie)
+                    }
+
+                }
+                LocalDataManager.addData(topMoviesToWrite, update: true, realm: realm)
+                DispatchQueue.main.async {
+                    completion?(true)
+                }
+            }
+        }
+    }
+    
+    class func fetchPopularTVs(completion: ((_ successful: Bool) -> Void)?) {
+        RequestManager.fetchMostPopularTVs { (tvsArray, error) in
+            guard error == nil, let fetchedTVsArray = tvsArray else {
+                completion?(false)
+                return
+            }
+
+            dataQueue.async {
+                let realm = LocalDataManager.backgroundRealm(queue: dataQueue)
+                let avaiableTopMovies = realm.objects(MostPopularTVs.self)
+                var topMoviesToWrite = [MostPopularTVs]()
+
+                for aPopularTV in fetchedTVsArray {
+                    let localMovie = avaiableTopMovies.filter("id == %@",aPopularTV.id).first
+                    if let _ = localMovie {
+                        //MARK: Improve logic
+                        DispatchQueue.main.async {
+                            completion?(true)
+                        }
+                        return
+                    } else {
+                        topMoviesToWrite.append(aPopularTV)
+                    }
+                }
+                LocalDataManager.addData(topMoviesToWrite, update: true, realm: realm)
                 DispatchQueue.main.async {
                     completion?(true)
                 }
