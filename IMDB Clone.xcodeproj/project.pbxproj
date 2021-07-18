@@ -30,6 +30,7 @@
 		E53C570726A3182D00940E76 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570626A3182D00940E76 /* Trailer.swift */; };
 		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
 		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
+		E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */; };
 		E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */; };
 		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		E53C570626A3182D00940E76 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
 		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
+		E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesAndTVsTableViewController.swift; sourceTree = "<group>"; };
 		E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
 		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,19 +183,28 @@
 		E53C56FF26A30E4D00940E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E53C570826A31D4B00940E76 /* Top250Movies */,
+				E549D36E26A4542B0058C8D1 /* MostPopularMoviesAndTVs */,
+				E53C570826A31D4B00940E76 /* Top250MoviesAndTVs */,
 				E53C570026A30E6300940E76 /* LoadingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		E53C570826A31D4B00940E76 /* Top250Movies */ = {
+		E53C570826A31D4B00940E76 /* Top250MoviesAndTVs */ = {
 			isa = PBXGroup;
 			children = (
 				E53C56CE26A2ED4800940E76 /* ViewController.swift */,
 				E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */,
 			);
-			path = Top250Movies;
+			path = Top250MoviesAndTVs;
+			sourceTree = "<group>";
+		};
+		E549D36E26A4542B0058C8D1 /* MostPopularMoviesAndTVs */ = {
+			isa = PBXGroup;
+			children = (
+				E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */,
+			);
+			path = MostPopularMoviesAndTVs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53C56FE26A30DD100940E76 /* UIViewControllerExtensions.swift in Sources */,
+				E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */,
 				E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */,
 				E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */,
 				E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */,

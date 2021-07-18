@@ -75,6 +75,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             topMovieCell.imageImageView.kf.setImage(with: imageURL)
             topMovieCell.titleLabel.text = movie.title
             topMovieCell.ratingAndYearLabel.text = "Year: \(movie.year), imdbRating: \(movie.imDbRating)"
+            topMovieCell.rankLabel.text = movie.rank
             return topMovieCell
         case 1:
             guard let topMovieCell = tableView.dequeueReusableCell(withIdentifier: Constants.topMovieCellIdentifier) as? TopMovieTableViewCell else {
@@ -86,11 +87,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             topMovieCell.imageImageView.kf.setImage(with: imageURL)
             topMovieCell.titleLabel.text = topTv.title
             topMovieCell.ratingAndYearLabel.text = "Year: \(topTv.year), imdbRating: \(topTv.imDbRating)"
+            topMovieCell.rankLabel.text = topTv.rank
             return topMovieCell
         default:
             return UITableViewCell()
         }
-        
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
