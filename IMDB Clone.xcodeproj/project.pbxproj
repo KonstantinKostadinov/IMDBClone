@@ -30,6 +30,8 @@
 		E53C570726A3182D00940E76 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570626A3182D00940E76 /* Trailer.swift */; };
 		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
 		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
+		E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */; };
+		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		E53C570626A3182D00940E76 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
 		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
+		E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
+		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				E53C56F726A307BE00940E76 /* TopMovies.swift */,
 				E53C570626A3182D00940E76 /* Trailer.swift */,
 				E53C570B26A3241D00940E76 /* TopTVs.swift */,
+				E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */,
+				E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 			files = (
 				E53C56FE26A30DD100940E76 /* UIViewControllerExtensions.swift in Sources */,
 				E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */,
+				E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */,
 				E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */,
+				E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */,
 				E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */,
 				E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */,
 				E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */,
