@@ -31,6 +31,11 @@
 		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
 		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
 		E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */; };
+		E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37126A460410058C8D1 /* SearchViewController.swift */; };
+		E549D37426A462AE0058C8D1 /* NavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */; };
+		E549D37626A462E70058C8D1 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37526A462E70058C8D1 /* UIImageExtensions.swift */; };
+		E5836F0826A592E100471AD3 /* SearchedTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5836F0726A592E100471AD3 /* SearchedTitles.swift */; };
+		E5836F0A26A5A71F00471AD3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */; };
 		E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */; };
 		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +64,11 @@
 		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
 		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
 		E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesAndTVsTableViewController.swift; sourceTree = "<group>"; };
+		E549D37126A460410058C8D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarExtensions.swift; sourceTree = "<group>"; };
+		E549D37526A462E70058C8D1 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		E5836F0726A592E100471AD3 /* SearchedTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTitles.swift; sourceTree = "<group>"; };
+		E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
 		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,17 +156,10 @@
 		E53C56E826A2FB2100940E76 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E53C56E926A2FB2D00940E76 /* Top250Movies */,
+				E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */,
+				E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E53C56E926A2FB2D00940E76 /* Top250Movies */ = {
-			isa = PBXGroup;
-			children = (
-				E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */,
-			);
-			path = Top250Movies;
 			sourceTree = "<group>";
 		};
 		E53C56EC26A3042000940E76 /* Extensions */ = {
@@ -164,6 +167,8 @@
 			children = (
 				E53C56ED26A3043000940E76 /* URLExtensions.swift */,
 				E53C56FD26A30DD100940E76 /* UIViewControllerExtensions.swift */,
+				E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */,
+				E549D37526A462E70058C8D1 /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				E53C570B26A3241D00940E76 /* TopTVs.swift */,
 				E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */,
 				E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */,
+				E5836F0726A592E100471AD3 /* SearchedTitles.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				E549D36E26A4542B0058C8D1 /* MostPopularMoviesAndTVs */,
 				E53C570826A31D4B00940E76 /* Top250MoviesAndTVs */,
 				E53C570026A30E6300940E76 /* LoadingViewController.swift */,
+				E549D37126A460410058C8D1 /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -336,16 +343,21 @@
 			files = (
 				E53C56FE26A30DD100940E76 /* UIViewControllerExtensions.swift in Sources */,
 				E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */,
+				E5836F0826A592E100471AD3 /* SearchedTitles.swift in Sources */,
 				E53C56CF26A2ED4800940E76 /* ViewController.swift in Sources */,
 				E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */,
 				E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */,
+				E549D37426A462AE0058C8D1 /* NavigationBarExtensions.swift in Sources */,
 				E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */,
+				E549D37626A462E70058C8D1 /* UIImageExtensions.swift in Sources */,
 				E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */,
 				E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */,
 				E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */,
 				E53C570526A30F6D00940E76 /* LocalDataManager.swift in Sources */,
 				E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */,
 				E53C570126A30E6300940E76 /* LoadingViewController.swift in Sources */,
+				E5836F0A26A5A71F00471AD3 /* SearchTableViewCell.swift in Sources */,
+				E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */,
 				E53C570726A3182D00940E76 /* Trailer.swift in Sources */,
 				E53C570326A30F4100940E76 /* SyncManager.swift in Sources */,
 				E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */,

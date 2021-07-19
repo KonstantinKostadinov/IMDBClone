@@ -17,10 +17,12 @@ class PopularMoviesAndTVsTableViewController: UITableViewController {
 
     private enum Constants {
         static let popularMovieCellIdentifier = "popularMovieCellIdentifier"
+        static let segueIdentifier = "toPresentPopularSegue"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.applyHorizontalGradientForPatientDetails()
         setupView()
         loadData()
     }
