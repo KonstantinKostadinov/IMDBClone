@@ -46,6 +46,10 @@ extension API {
     class func trilerForMovie(with id: String) -> API {
         API("Trailer/k_2y9cl6jb/\(id)")
     }
+
+    class func search(by keyword: String) -> API {
+        API("SearchTitle/k_2y9cl6jb/\(keyword)")
+    }
 }
 
 class RequestManager: NSObject {
@@ -165,6 +169,29 @@ class RequestManager: NSObject {
             }
             let popularTVs = movieItems.compactMap({MostPopularTVs(value: $0)})
             completion?(popularTVs, nil)
+        }
+    }
+
+    class func fetchSearchResults(with keyword: String, completion: ((_ searchResults: [SearchedTitles]?,_ error: Error?)-> Void)? = nil) {
+        Alamofire.request(API.search(by: keyword), method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            guard response.error == nil else {
+                completion?(nil, response.error)
+                return
+            }
+
+            guard response.result.error == nil else {
+                completion?(nil, response.result.error)
+                return
+            }
+
+            guard let dict = response.result.value as? [String:Any],
+                  let searchResults = dict["results"] as? Array<[String:Any]> else {
+                completion?(nil, IMDBError.cannotParseJSON)
+                return
+            }
+            
+            let searchResultsArray = searchResults.compactMap({SearchedTitles(value: $0)})
+            completion?(searchResultsArray, nil)
         }
     }
 }
