@@ -26,19 +26,19 @@ class Trailer: Object {
         return "imDbId"
     }
 
-    convenience init(json: [String:Any]) {
+    convenience init(json: [String:String]) {
         self.init()
-        self.imDbId = json["imDbId"] as? String ?? ""
-        self.title = json["title"] as? String ?? ""
-        self.fullTitle = json["fullTitle"] as? String ?? ""
-        self.type = json["type"] as? String ?? ""
-        self.year = json["year"] as? String ?? ""
-        self.videoId = json["videoId"] as? String ?? ""
-        self.videoTitle = json["videoTitle"] as? String ?? ""
-        self.videoDescription = json["videoDescription"] as? String ?? ""
-        self.thumbnailUrl = json["thumbnailUrl"] as? String ?? ""
-        self.updateDate = json["updateDate"] as? String ?? ""
-        self.link = json["link"] as? String ?? ""
-        self.linkEmbed = json["linkEmbed"] as? String ?? ""
+        self.imDbId = json["imDbId"] ?? ""
+        self.title = json["title"] ?? ""
+        self.fullTitle = json["fullTitle"] ?? ""
+        self.type = json["type"] ?? ""
+        self.year = json["year"] ?? ""
+        self.videoId = json["videoId"] ?? ""
+        self.videoTitle = json["videoTitle"] ?? ""
+        self.videoDescription = json["videoDescription"] ?? ""
+        self.thumbnailUrl = json["thumbnailUrl"] ?? ""
+        self.updateDate = json["updateDate"] ?? ""
+        self.link = json["link"] ?? ""
+        self.linkEmbed = json["linkEmbed"] ?? ""
     }
 }

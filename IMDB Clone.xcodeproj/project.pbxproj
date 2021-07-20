@@ -30,6 +30,7 @@
 		E53C570726A3182D00940E76 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570626A3182D00940E76 /* Trailer.swift */; };
 		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
 		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
+		E5484CF026A75CB4001AF566 /* MovieTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5484CEF26A75CB4001AF566 /* MovieTrailer.swift */; };
 		E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */; };
 		E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37126A460410058C8D1 /* SearchViewController.swift */; };
 		E549D37426A462AE0058C8D1 /* NavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */; };
@@ -63,6 +64,7 @@
 		E53C570626A3182D00940E76 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
 		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
+		E5484CEF26A75CB4001AF566 /* MovieTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTrailer.swift; sourceTree = "<group>"; };
 		E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesAndTVsTableViewController.swift; sourceTree = "<group>"; };
 		E549D37126A460410058C8D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarExtensions.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */,
 				E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */,
 				E5836F0726A592E100471AD3 /* SearchedTitles.swift */,
+				E5484CEF26A75CB4001AF566 /* MovieTrailer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				E53C570726A3182D00940E76 /* Trailer.swift in Sources */,
 				E53C570326A30F4100940E76 /* SyncManager.swift in Sources */,
 				E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */,
+				E5484CF026A75CB4001AF566 /* MovieTrailer.swift in Sources */,
 				E53C56EB26A2FB4800940E76 /* TopMovieTableViewCell.swift in Sources */,
 				E53C56E026A2EF6000940E76 /* RequestManager.swift in Sources */,
 			);
