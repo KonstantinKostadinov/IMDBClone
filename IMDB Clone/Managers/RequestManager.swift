@@ -16,13 +16,7 @@ public class API: URLConvertible {
     let stringCall: String
 
     var baseURL: String {
-        #if TEST
         return "https://imdb-api.com/API/"
-        #elseif STAGING
-        return "https://imdb-api.com/API/"
-        #else
-        return "https://imdb-api.com/API/"
-        #endif
     }
 
     public init(_ value: String) {
@@ -49,6 +43,10 @@ extension API {
 
     class func search(by keyword: String) -> API {
         API("SearchTitle/k_2y9cl6jb/\(keyword)")
+    }
+
+    class func movieTrailer(with id: String) -> API {
+        API("YouTubeTrailer/k_2y9cl6jb/\(id)")
     }
 }
 
@@ -114,7 +112,7 @@ class RequestManager: NSObject {
                     return
                 }
 
-                guard let dict = response.result.value as? [String:Any] else {
+                guard let dict = response.result.value as? [String:String] else {
                     completion?(IMDBError.cannotParseJSON)
                     return
                 }
@@ -189,9 +187,36 @@ class RequestManager: NSObject {
                 completion?(nil, IMDBError.cannotParseJSON)
                 return
             }
-            
+
             let searchResultsArray = searchResults.compactMap({SearchedTitles(value: $0)})
             completion?(searchResultsArray, nil)
+        }
+    }
+
+    class func fetchMovieTrailer(with id: String, completion: ((_ movieTrailer: MovieTrailer?, _ error: Error?)-> Void)? = nil) {
+        Alamofire.request(API.movieTrailer(with: id), method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            updateDataQueue.async {
+                guard response.error == nil else {
+                    completion?(nil,response.error)
+                    return
+                }
+
+                guard response.result.error == nil else {
+                    completion?(nil, response.result.error)
+                    return
+                }
+
+                guard let dict = response.result.value as? [String:String] else {
+                    completion?(nil, IMDBError.cannotParseJSON)
+                    return
+                }
+
+
+                let trailer = MovieTrailer(json: dict)
+                let realm = LocalDataManager.backgroundRealm(queue: updateDataQueue)
+                LocalDataManager.addData(trailer, update: true, realm: realm)
+                completion?(trailer, nil)
+            }
         }
     }
 }

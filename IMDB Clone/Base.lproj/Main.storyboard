@@ -329,31 +329,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zST-qW-EWk">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="308" width="414" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99b-XI-yDc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="9T8-4S-JW6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HwZ-uI-pti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zST-qW-EWk" firstAttribute="top" secondItem="HwZ-uI-pti" secondAttribute="top" id="HRR-TS-MHd"/>
-                            <constraint firstItem="zST-qW-EWk" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="aCO-du-XzR"/>
-                            <constraint firstItem="zST-qW-EWk" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="j3S-9O-dkt"/>
-                            <constraint firstItem="zST-qW-EWk" firstAttribute="bottom" secondItem="HwZ-uI-pti" secondAttribute="bottom" id="nNq-WX-qVV"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="MBG-g2-idM"/>
+                            <constraint firstItem="99b-XI-yDc" firstAttribute="top" secondItem="HwZ-uI-pti" secondAttribute="top" id="MG5-tN-TDb"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="bottom" secondItem="HwZ-uI-pti" secondAttribute="bottom" id="bef-DI-3v1"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="jrp-Pp-wjp"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="top" secondItem="99b-XI-yDc" secondAttribute="bottom" id="pOe-fw-vQ6"/>
+                            <constraint firstItem="99b-XI-yDc" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="w6g-65-cW9"/>
+                            <constraint firstItem="99b-XI-yDc" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="yXH-tT-vuZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8bT-0w-9yx"/>
                     <connections>
                         <outlet property="textView" destination="zST-qW-EWk" id="KrK-f2-WTX"/>
+                        <outlet property="videoPlayerView" destination="99b-XI-yDc" id="uOi-2a-Afc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8B8-gC-Vgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="236"/>
+            <point key="canvasLocation" x="3169.5652173913045" y="235.71428571428569"/>
         </scene>
         <!--Item-->
         <scene sceneID="efm-TX-jsL">
