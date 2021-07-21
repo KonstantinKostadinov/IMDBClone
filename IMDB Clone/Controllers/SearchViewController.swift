@@ -25,7 +25,7 @@ class SearchViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.searchController.searchResultsUpdater = self
-        self.navigationController?.navigationBar.applyHorizontalGradientForPatientDetails()
+        self.navigationController?.navigationBar.applyGradientsOnNavigationBar()
 
         self.navigationItem.hidesSearchBarWhenScrolling = false
         tableView.tableFooterView = UIView()

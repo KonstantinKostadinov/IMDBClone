@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         YoutubeKit.shared.setAPIKey("AIzaSyDQl9kj_fEhcQU-VzdxLeD50B2I_xRv-AY")
+        UITabBar.appearance().barTintColor = UIColor.black
         return true
     }
 
