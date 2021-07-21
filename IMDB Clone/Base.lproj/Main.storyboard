@@ -427,6 +427,14 @@
                                             <outlet property="actorsNameLabel" destination="KLL-0H-cQQ" id="Tle-fD-t7T"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="normalCollectionCellIdentifier" id="df2-a5-cHw">
+                                        <rect key="frame" x="165" y="-2" width="155" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eyv-2m-z9E">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="174"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
