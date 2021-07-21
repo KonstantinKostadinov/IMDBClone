@@ -27,6 +27,7 @@ class PresentTopMovieTrailerViewController: UIViewController {
     var directors = Array<[String:Any]>()
     private enum Constants {
         static let actorCellIdentifier = "actorCellIdentifier"
+        static let normalCollectionCellIdentifier = "normalCollectionCellIdentifier"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,18 +97,28 @@ class PresentTopMovieTrailerViewController: UIViewController {
 
 extension PresentTopMovieTrailerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return actors.count
+        if actors.isEmpty {
+            return 1
+        } else {
+            return actors.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.actorCellIdentifier, for: indexPath) as? ActorCollectionViewCell else {
-            return UICollectionViewCell()
+        if actors.isEmpty {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.normalCollectionCellIdentifier, for: indexPath)
+            cell.backgroundColor = .lightGray
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.actorCellIdentifier, for: indexPath) as? ActorCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            let actor = actors[indexPath.item]
+            cell.actorsNameLabel.text = actor["name"] as? String ?? ""
+            let imageURL = URL(string: actor["image"] as? String ?? "")
+            cell.actorImageView.kf.setImage(with: imageURL)
+            return cell
         }
-        let actor = actors[indexPath.item]
-        cell.actorsNameLabel.text = actor["name"] as? String ?? ""
-        let imageURL = URL(string: actor["image"] as? String ?? "")
-        cell.actorImageView.kf.setImage(with: imageURL)
-        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
