@@ -6,18 +6,16 @@
 //
 
 import UIKit
-import AVFoundation
-import AVKit
+import YoutubeKit
+import Kingfisher
 
 class PresentTopMovieTrailerViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var videoPlayerView: UIView!
+    @IBOutlet weak var thumbmnailImageView: UIImageView!
 
     var trailer = Trailer()
     var movieTrailer = MovieTrailer()
     var movieId: String = ""
-    var player: AVPlayer!
-    var avpController = AVPlayerViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +27,8 @@ class PresentTopMovieTrailerViewController: UIViewController {
     private func loadData() {
         textView.text = "\(LocalDataManager.realm.object(ofType: Trailer.self, forPrimaryKey: movieId))"
         trailer = LocalDataManager.realm.object(ofType: Trailer.self, forPrimaryKey: movieId) ?? Trailer()
+        let imageURL = URL(string: self.trailer.thumbnailUrl)
+        thumbmnailImageView.kf.setImage(with: imageURL)
     }
 
     private func fetchTrailerData() {
@@ -43,42 +43,12 @@ class PresentTopMovieTrailerViewController: UIViewController {
                 }
                 return
             }
-
-            DispatchQueue.main.sync {
-                let movieTrailer = LocalDataManager.realm.object(ofType: MovieTrailer.self, forPrimaryKey: self.trailer.imDbId)
-                if let unwrappedTrailer = movieTrailer {
-                    self.movieTrailer = unwrappedTrailer
-                    self.setupPlayer()
-                } else {
-                    self.showHUD(progressLabel: "Could not present Trailer")
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        self.dismissHUD(isAnimated: true)
-                    }
-                }
-            }
         }
     }
-    // swiftlint:disable all
-    private func setupPlayer() {
+    @IBAction func didTapThumbnailImage(_ sender: Any) {
+        guard let movieTrailer = LocalDataManager.realm.object(ofType: MovieTrailer.self, forPrimaryKey: self.trailer.imDbId) else { return }
         if let url = URL(string: movieTrailer.videoUrl) {
-            self.player = AVPlayer(url: url)
-            self.avpController = AVPlayerViewController()
-            self.avpController.player = self.player
-            avpController.view.frame = videoPlayerView.frame
-            self.addChild(avpController)
-            self.view.addSubview(avpController.view)
+            UIApplication.shared.open(url)
         }
     }
-    // swiftlint:enable all
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

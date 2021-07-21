@@ -1,16 +1,20 @@
 PODS:
   - SwiftLint (0.42.0)
+  - YoutubeKit (0.5.0)
 
 DEPENDENCIES:
   - SwiftLint
+  - YoutubeKit
 
 SPEC REPOS:
   trunk:
     - SwiftLint
+    - YoutubeKit
 
 SPEC CHECKSUMS:
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+  YoutubeKit: 9f66eba839211158f2aac7ad3833593bd56fa8f9
 
-PODFILE CHECKSUM: 2b5951605da5b2c7a3b28bcce4522fba3d5ee998
+PODFILE CHECKSUM: 8ed05a749518d0c42211baf59d53473ac0c94f19
 
 COCOAPODS: 1.10.1
