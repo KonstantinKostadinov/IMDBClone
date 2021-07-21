@@ -7,4 +7,5 @@ target 'IMDB Clone' do
 
   # Pods for IMDB Clone
   pod 'SwiftLint'
+ pod 'YoutubeKit'
 end

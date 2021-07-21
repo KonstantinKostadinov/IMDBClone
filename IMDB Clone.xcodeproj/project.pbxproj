@@ -31,6 +31,7 @@
 		E53C570A26A31D9500940E76 /* PresentTopMovieTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */; };
 		E53C570C26A3241D00940E76 /* TopTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570B26A3241D00940E76 /* TopTVs.swift */; };
 		E5484CF026A75CB4001AF566 /* MovieTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5484CEF26A75CB4001AF566 /* MovieTrailer.swift */; };
+		E5484CF426A77B83001AF566 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5484CF326A77B83001AF566 /* .swiftlint.yml */; };
 		E549D37026A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */; };
 		E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37126A460410058C8D1 /* SearchViewController.swift */; };
 		E549D37426A462AE0058C8D1 /* NavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */; };
@@ -65,6 +66,7 @@
 		E53C570926A31D9500940E76 /* PresentTopMovieTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTopMovieTrailerViewController.swift; sourceTree = "<group>"; };
 		E53C570B26A3241D00940E76 /* TopTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVs.swift; sourceTree = "<group>"; };
 		E5484CEF26A75CB4001AF566 /* MovieTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTrailer.swift; sourceTree = "<group>"; };
+		E5484CF326A77B83001AF566 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E549D36F26A454520058C8D1 /* PopularMoviesAndTVsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesAndTVsTableViewController.swift; sourceTree = "<group>"; };
 		E549D37126A460410058C8D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarExtensions.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		E53C56BE26A2ED4800940E76 = {
 			isa = PBXGroup;
 			children = (
+				E5484CF326A77B83001AF566 /* .swiftlint.yml */,
 				E53C56C926A2ED4800940E76 /* IMDB Clone */,
 				E53C56C826A2ED4800940E76 /* Products */,
 				4E65BB9879F5774A8187A584 /* Pods */,
@@ -224,11 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53C56DB26A2ED4A00940E76 /* Build configuration list for PBXNativeTarget "IMDB Clone" */;
 			buildPhases = (
-				E53C56E726A2F4E100940E76 /* ShellScript */,
 				036DA69A00E5299EDD2719D1 /* [CP] Check Pods Manifest.lock */,
+				E53C56E726A2F4E100940E76 /* ShellScript */,
 				E53C56C326A2ED4800940E76 /* Sources */,
 				E53C56C426A2ED4800940E76 /* Frameworks */,
 				E53C56C526A2ED4800940E76 /* Resources */,
+				5126138968EE68502A755345 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5484CF426A77B83001AF566 /* .swiftlint.yml in Resources */,
 				E53C56D726A2ED4A00940E76 /* LaunchScreen.storyboard in Resources */,
 				E53C56D426A2ED4A00940E76 /* Assets.xcassets in Resources */,
 				E53C56D226A2ED4800940E76 /* Main.storyboard in Resources */,
@@ -318,6 +323,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5126138968EE68502A755345 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E53C56E726A2F4E100940E76 /* ShellScript */ = {

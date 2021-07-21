@@ -336,33 +336,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99b-XI-yDc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="220"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kfn-bP-uQG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="212"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="9T8-4S-JW6"/>
+                                    <constraint firstAttribute="height" constant="212" id="Bjg-tN-zpa"/>
                                 </constraints>
-                            </view>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dtc-9T-kCz" appends="YES" id="jAO-fh-coD"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HwZ-uI-pti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kfn-bP-uQG" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="5Hd-Ez-dDU"/>
+                            <constraint firstItem="kfn-bP-uQG" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="IhY-AR-N8q"/>
+                            <constraint firstItem="kfn-bP-uQG" firstAttribute="top" secondItem="HwZ-uI-pti" secondAttribute="top" id="Jn0-Ep-Y9A"/>
                             <constraint firstItem="zST-qW-EWk" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="MBG-g2-idM"/>
-                            <constraint firstItem="99b-XI-yDc" firstAttribute="top" secondItem="HwZ-uI-pti" secondAttribute="top" id="MG5-tN-TDb"/>
+                            <constraint firstItem="zST-qW-EWk" firstAttribute="top" secondItem="kfn-bP-uQG" secondAttribute="bottom" constant="8" symbolic="YES" id="OtC-fd-vPn"/>
                             <constraint firstItem="zST-qW-EWk" firstAttribute="bottom" secondItem="HwZ-uI-pti" secondAttribute="bottom" id="bef-DI-3v1"/>
                             <constraint firstItem="zST-qW-EWk" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="jrp-Pp-wjp"/>
-                            <constraint firstItem="zST-qW-EWk" firstAttribute="top" secondItem="99b-XI-yDc" secondAttribute="bottom" id="pOe-fw-vQ6"/>
-                            <constraint firstItem="99b-XI-yDc" firstAttribute="leading" secondItem="HwZ-uI-pti" secondAttribute="leading" id="w6g-65-cW9"/>
-                            <constraint firstItem="99b-XI-yDc" firstAttribute="trailing" secondItem="HwZ-uI-pti" secondAttribute="trailing" id="yXH-tT-vuZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8bT-0w-9yx"/>
                     <connections>
                         <outlet property="textView" destination="zST-qW-EWk" id="KrK-f2-WTX"/>
-                        <outlet property="videoPlayerView" destination="99b-XI-yDc" id="uOi-2a-Afc"/>
+                        <outlet property="thumbmnailImageView" destination="kfn-bP-uQG" id="Zk0-mi-Afy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8B8-gC-Vgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dtc-9T-kCz">
+                    <connections>
+                        <action selector="didTapThumbnailImage:" destination="ss6-j0-xZE" id="v8g-cL-7gV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3169.5652173913045" y="235.71428571428569"/>
         </scene>
@@ -462,7 +470,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M80-IG-eI7"/>
+        <segue reference="bgc-Ok-EPG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
