@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var topMovies: [TopMovies] = [TopMovies]()
     var movieId: String = ""
     var topTvs: [TopTVs] = [TopTVs]()
+    var movieRating: String = ""
     private enum Constants {
         static let titleName = "Top 250 Movies"
         static let topMovieCellIdentifier = "topMovieCellIdentifier"
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
             return
         }
         destiantion.movieId = movieId
+        destiantion.rating = movieRating
     }
     @IBAction func didTapSegmentedControl(_ sender: Any) {
         tableView.reloadData()
@@ -105,8 +107,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             self.movieId = topMovies[indexPath.row].id
+            self.movieRating = topMovies[indexPath.row].imDbRating
         case 1:
             self.movieId = topTvs[indexPath.row].id
+            self.movieRating = topTvs[indexPath.row].imDbRating
         default:
             return
         }

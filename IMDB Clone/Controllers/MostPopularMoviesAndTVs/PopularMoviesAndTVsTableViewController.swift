@@ -14,6 +14,7 @@ class PopularMoviesAndTVsTableViewController: UITableViewController {
     var popularMovies: [MostPopularMovies] = [MostPopularMovies]()
     var movieId: String = ""
     var popularTVs: [MostPopularTVs] = [MostPopularTVs]()
+    var rating: String = ""
 
     private enum Constants {
         static let popularMovieCellIdentifier = "popularMovieCellIdentifier"

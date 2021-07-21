@@ -10,22 +10,34 @@ import YoutubeKit
 import Kingfisher
 
 class PresentTopMovieTrailerViewController: UIViewController {
-    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var thumbmnailImageView: UIImageView!
-
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     var trailer = Trailer()
     var movieTrailer = MovieTrailer()
     var movieId: String = ""
+    var rating: String = ""
 
+    var actors = Array<[String:Any]>()
+    var directors = Array<[String:Any]>()
+    private enum Constants {
+        static let actorCellIdentifier = "actorCellIdentifier"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        setupViews()
         fetchTrailerData()
+        fetchCastData()
         // Do any additional setup after loading the view.
     }
 
     private func loadData() {
-        textView.text = "\(LocalDataManager.realm.object(ofType: Trailer.self, forPrimaryKey: movieId))"
         trailer = LocalDataManager.realm.object(ofType: Trailer.self, forPrimaryKey: movieId) ?? Trailer()
         let imageURL = URL(string: self.trailer.thumbnailUrl)
         thumbmnailImageView.kf.setImage(with: imageURL)
@@ -45,10 +57,60 @@ class PresentTopMovieTrailerViewController: UIViewController {
             }
         }
     }
+
+    private func fetchCastData() {
+        RequestManager.fetchCast(with: trailer.imDbId) { (directors, actors, error) in
+            if let _ = error {
+                return
+            }
+
+            guard let directorsArray = directors, let actorsArray = actors else { return }
+            print(actors)
+            print(directors)
+            
+            self.actors = actorsArray
+            self.directors = directorsArray
+            self.collectionView.reloadData()
+        }
+    }
+
+    private func setupViews() {
+        titleLabel.text = trailer.title
+        yearLabel.text = "Year: \(trailer.year)"
+        ratingLabel.text = "Rating: \(rating)"
+        descriptionLabel.text = " Description: \(trailer.videoDescription)"
+        collectionView.delegate = self
+        collectionView.dataSource = self
+//        var layout = UICollectionViewFlowLayout()
+//        collectionView.collectionViewLayout = UICollectionViewLayout()
+        
+    }
     @IBAction func didTapThumbnailImage(_ sender: Any) {
         guard let movieTrailer = LocalDataManager.realm.object(ofType: MovieTrailer.self, forPrimaryKey: self.trailer.imDbId) else { return }
         if let url = URL(string: movieTrailer.videoUrl) {
             UIApplication.shared.open(url)
         }
     }
+}
+
+extension PresentTopMovieTrailerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return actors.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.actorCellIdentifier, for: indexPath) as? ActorCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let actor = actors[indexPath.item]
+        cell.actorsNameLabel.text = actor["name"] as? String ?? ""
+        let imageURL = URL(string: actor["image"] as? String ?? "")
+        cell.actorImageView.kf.setImage(with: imageURL)
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 155, height: 174)
+    }
+    
 }
