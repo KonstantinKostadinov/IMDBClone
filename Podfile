@@ -9,3 +9,8 @@ target 'IMDB Clone' do
   pod 'SwiftLint'
  pod 'YoutubeKit'
 end
+
+
+target 'IMDB CloneTests' do
+    inherit! :complete
+end

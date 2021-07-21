@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
         <!--Popular Movies AndT Vs Table View Controller-->
         <scene sceneID="lGo-Oh-owi">
             <objects>
-                <tableViewController id="P92-Ex-x2Z" customClass="PopularMoviesAndTVsTableViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PopularMoviesAndTVsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P92-Ex-x2Z" customClass="PopularMoviesAndTVsTableViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cdo-9u-T8N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,7 +235,7 @@
         <!--Search View Controller-->
         <scene sceneID="IXm-Vk-qqu">
             <objects>
-                <viewController id="Hjj-FI-brH" customClass="SearchViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hjj-FI-brH" customClass="SearchViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S13-Gy-Z8e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +324,7 @@
         <!--Present Top Movie Trailer View Controller-->
         <scene sceneID="boe-Qt-G9p">
             <objects>
-                <viewController id="ss6-j0-xZE" customClass="PresentTopMovieTrailerViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentTopMovieTrailerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ss6-j0-xZE" customClass="PresentTopMovieTrailerViewController" customModule="IMDB_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hV-XU-Zka">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -564,7 +564,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bgc-Ok-EPG"/>
+        <segue reference="M80-IG-eI7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A791671C82117E79DEC99C6 /* libPods-IMDB CloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A958531A01A8CA2577D1ED /* libPods-IMDB CloneTests.a */; };
 		A8CBA46DAB4C85D549EEE22E /* Pods_IMDB_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */; };
 		E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56CA26A2ED4800940E76 /* AppDelegate.swift */; };
 		E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56CC26A2ED4800940E76 /* SceneDelegate.swift */; };
@@ -15,14 +16,14 @@
 		E53C56D426A2ED4A00940E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53C56D326A2ED4A00940E76 /* Assets.xcassets */; };
 		E53C56D726A2ED4A00940E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53C56D526A2ED4A00940E76 /* LaunchScreen.storyboard */; };
 		E53C56E026A2EF6000940E76 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56DF26A2EF6000940E76 /* RequestManager.swift */; };
-		E53C56E326A2F08B00940E76 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56E226A2F08B00940E76 /* Alamofire */; };
+		E53C56E326A2F08B00940E76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56E226A2F08B00940E76 /* SwiftPackageProductDependency */; };
 		E53C56EB26A2FB4800940E76 /* TopMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */; };
 		E53C56EE26A3043000940E76 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56ED26A3043000940E76 /* URLExtensions.swift */; };
-		E53C56F126A3059800940E76 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F026A3059800940E76 /* Kingfisher */; };
-		E53C56F426A307A600940E76 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F326A307A600940E76 /* Realm */; };
-		E53C56F626A307A600940E76 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F526A307A600940E76 /* RealmSwift */; };
+		E53C56F126A3059800940E76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F026A3059800940E76 /* SwiftPackageProductDependency */; };
+		E53C56F426A307A600940E76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F326A307A600940E76 /* SwiftPackageProductDependency */; };
+		E53C56F626A307A600940E76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56F526A307A600940E76 /* SwiftPackageProductDependency */; };
 		E53C56F826A307BE00940E76 /* TopMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56F726A307BE00940E76 /* TopMovies.swift */; };
-		E53C56FC26A30DC200940E76 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56FB26A30DC200940E76 /* MBProgressHUD */; };
+		E53C56FC26A30DC200940E76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E53C56FB26A30DC200940E76 /* SwiftPackageProductDependency */; };
 		E53C56FE26A30DD100940E76 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C56FD26A30DD100940E76 /* UIViewControllerExtensions.swift */; };
 		E53C570126A30E6300940E76 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570026A30E6300940E76 /* LoadingViewController.swift */; };
 		E53C570326A30F4100940E76 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C570226A30F4100940E76 /* SyncManager.swift */; };
@@ -42,10 +43,24 @@
 		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
 		E5D28A4A26A887E7007AE127 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */; };
 		E5D28A4C26A88FB2007AE127 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A4B26A88FB2007AE127 /* UIImageViewExtensions.swift */; };
+		E5D28A5C26A8A879007AE127 /* TopMoviesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A5B26A8A879007AE127 /* TopMoviesControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5D28A5626A8A7A7007AE127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53C56BF26A2ED4800940E76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53C56C626A2ED4800940E76;
+			remoteInfo = "IMDB Clone";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMDB_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6523E73AB47DBF4AA2DCB7 /* Pods-IMDB CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB CloneTests.release.xcconfig"; path = "Target Support Files/Pods-IMDB CloneTests/Pods-IMDB CloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		467BBCB8B41805FBC9FED390 /* Pods-IMDB CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-IMDB CloneTests/Pods-IMDB CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67A958531A01A8CA2577D1ED /* libPods-IMDB CloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMDB CloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63CC57612BF388F804CEF19 /* Pods-IMDB Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB Clone.release.xcconfig"; path = "Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone.release.xcconfig"; sourceTree = "<group>"; };
 		CBD1C887798D14282ADF872A /* Pods-IMDB Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB Clone.debug.xcconfig"; path = "Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		E53C56C726A2ED4800940E76 /* IMDB Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDB Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +94,9 @@
 		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
 		E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5D28A4B26A88FB2007AE127 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		E5D28A5126A8A7A6007AE127 /* IMDB CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMDB CloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D28A5526A8A7A6007AE127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D28A5B26A8A879007AE127 /* TopMoviesControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +104,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E53C56FC26A30DC200940E76 /* MBProgressHUD in Frameworks */,
-				E53C56F126A3059800940E76 /* Kingfisher in Frameworks */,
-				E53C56E326A2F08B00940E76 /* Alamofire in Frameworks */,
-				E53C56F426A307A600940E76 /* Realm in Frameworks */,
-				E53C56F626A307A600940E76 /* RealmSwift in Frameworks */,
+				E53C56FC26A30DC200940E76 /* BuildFile in Frameworks */,
+				E53C56F126A3059800940E76 /* BuildFile in Frameworks */,
+				E53C56E326A2F08B00940E76 /* BuildFile in Frameworks */,
+				E53C56F426A307A600940E76 /* BuildFile in Frameworks */,
+				E53C56F626A307A600940E76 /* BuildFile in Frameworks */,
 				A8CBA46DAB4C85D549EEE22E /* Pods_IMDB_Clone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D28A4E26A8A7A6007AE127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A791671C82117E79DEC99C6 /* libPods-IMDB CloneTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +129,8 @@
 			children = (
 				CBD1C887798D14282ADF872A /* Pods-IMDB Clone.debug.xcconfig */,
 				B63CC57612BF388F804CEF19 /* Pods-IMDB Clone.release.xcconfig */,
+				467BBCB8B41805FBC9FED390 /* Pods-IMDB CloneTests.debug.xcconfig */,
+				3A6523E73AB47DBF4AA2DCB7 /* Pods-IMDB CloneTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -111,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				137FE603C0D7B4BB54346826 /* Pods_IMDB_Clone.framework */,
+				67A958531A01A8CA2577D1ED /* libPods-IMDB CloneTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +149,7 @@
 			children = (
 				E5484CF326A77B83001AF566 /* .swiftlint.yml */,
 				E53C56C926A2ED4800940E76 /* IMDB Clone */,
+				E5D28A5226A8A7A6007AE127 /* IMDB CloneTests */,
 				E53C56C826A2ED4800940E76 /* Products */,
 				4E65BB9879F5774A8187A584 /* Pods */,
 				8E262A26AFF850EA8F157E7E /* Frameworks */,
@@ -130,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E53C56C726A2ED4800940E76 /* IMDB Clone.app */,
+				E5D28A5126A8A7A6007AE127 /* IMDB CloneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +257,15 @@
 			path = MostPopularMoviesAndTVs;
 			sourceTree = "<group>";
 		};
+		E5D28A5226A8A7A6007AE127 /* IMDB CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5D28A5B26A8A879007AE127 /* TopMoviesControllerTests.swift */,
+				E5D28A5526A8A7A6007AE127 /* Info.plist */,
+			);
+			path = "IMDB CloneTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,15 +286,34 @@
 			);
 			name = "IMDB Clone";
 			packageProductDependencies = (
-				E53C56E226A2F08B00940E76 /* Alamofire */,
-				E53C56F026A3059800940E76 /* Kingfisher */,
-				E53C56F326A307A600940E76 /* Realm */,
-				E53C56F526A307A600940E76 /* RealmSwift */,
-				E53C56FB26A30DC200940E76 /* MBProgressHUD */,
+				E53C56E226A2F08B00940E76 /* SwiftPackageProductDependency */,
+				E53C56F026A3059800940E76 /* SwiftPackageProductDependency */,
+				E53C56F326A307A600940E76 /* SwiftPackageProductDependency */,
+				E53C56F526A307A600940E76 /* SwiftPackageProductDependency */,
+				E53C56FB26A30DC200940E76 /* SwiftPackageProductDependency */,
 			);
 			productName = "IMDB Clone";
 			productReference = E53C56C726A2ED4800940E76 /* IMDB Clone.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E5D28A5026A8A7A6007AE127 /* IMDB CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D28A5A26A8A7A7007AE127 /* Build configuration list for PBXNativeTarget "IMDB CloneTests" */;
+			buildPhases = (
+				63FBB8DFD8B7AC3231C7FF2C /* [CP] Check Pods Manifest.lock */,
+				E5D28A4D26A8A7A6007AE127 /* Sources */,
+				E5D28A4E26A8A7A6007AE127 /* Frameworks */,
+				E5D28A4F26A8A7A6007AE127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5D28A5726A8A7A7007AE127 /* PBXTargetDependency */,
+			);
+			name = "IMDB CloneTests";
+			productName = "IMDB CloneTests";
+			productReference = E5D28A5126A8A7A6007AE127 /* IMDB CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,6 +327,10 @@
 					E53C56C626A2ED4800940E76 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					E5D28A5026A8A7A6007AE127 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E53C56C626A2ED4800940E76;
+					};
 				};
 			};
 			buildConfigurationList = E53C56C226A2ED4800940E76 /* Build configuration list for PBXProject "IMDB Clone" */;
@@ -280,16 +343,17 @@
 			);
 			mainGroup = E53C56BE26A2ED4800940E76;
 			packageReferences = (
-				E53C56E126A2F08B00940E76 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				E53C56EF26A3059800940E76 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-				E53C56FA26A30DC200940E76 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				E53C56E126A2F08B00940E76 /* RemoteSwiftPackageReference */,
+				E53C56EF26A3059800940E76 /* RemoteSwiftPackageReference */,
+				E53C56F226A307A600940E76 /* RemoteSwiftPackageReference */,
+				E53C56FA26A30DC200940E76 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = E53C56C826A2ED4800940E76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E53C56C626A2ED4800940E76 /* IMDB Clone */,
+				E5D28A5026A8A7A6007AE127 /* IMDB CloneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +367,13 @@
 				E53C56D726A2ED4A00940E76 /* LaunchScreen.storyboard in Resources */,
 				E53C56D426A2ED4A00940E76 /* Assets.xcassets in Resources */,
 				E53C56D226A2ED4800940E76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D28A4F26A8A7A6007AE127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +417,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMDB Clone/Pods-IMDB Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63FBB8DFD8B7AC3231C7FF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMDB CloneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E53C56E726A2F4E100940E76 /* ShellScript */ = {
@@ -400,7 +493,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5D28A4D26A8A7A6007AE127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D28A5C26A8A879007AE127 /* TopMoviesControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5D28A5726A8A7A7007AE127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53C56C626A2ED4800940E76 /* IMDB Clone */;
+			targetProxy = E5D28A5626A8A7A7007AE127 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E53C56D026A2ED4800940E76 /* Main.storyboard */ = {
@@ -578,6 +687,48 @@
 			};
 			name = Release;
 		};
+		E5D28A5826A8A7A7007AE127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467BBCB8B41805FBC9FED390 /* Pods-IMDB CloneTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5B8534J99;
+				INFOPLIST_FILE = "IMDB CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KonstantinKostadinov.IMDB-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMDB Clone.app/IMDB Clone";
+			};
+			name = Debug;
+		};
+		E5D28A5926A8A7A7007AE127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6523E73AB47DBF4AA2DCB7 /* Pods-IMDB CloneTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5B8534J99;
+				INFOPLIST_FILE = "IMDB CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KonstantinKostadinov.IMDB-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMDB Clone.app/IMDB Clone";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,10 +750,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E5D28A5A26A8A7A7007AE127 /* Build configuration list for PBXNativeTarget "IMDB CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D28A5826A8A7A7007AE127 /* Debug */,
+				E5D28A5926A8A7A7007AE127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E53C56E126A2F08B00940E76 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		E53C56E126A2F08B00940E76 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -610,7 +770,7 @@
 				minimumVersion = 4.9.1;
 			};
 		};
-		E53C56EF26A3059800940E76 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		E53C56EF26A3059800940E76 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -618,7 +778,7 @@
 				minimumVersion = 6.3.0;
 			};
 		};
-		E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		E53C56F226A307A600940E76 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
 			requirement = {
@@ -626,7 +786,7 @@
 				minimumVersion = 10.10.0;
 			};
 		};
-		E53C56FA26A30DC200940E76 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+		E53C56FA26A30DC200940E76 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jdg/MBProgressHUD";
 			requirement = {
@@ -637,29 +797,29 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E53C56E226A2F08B00940E76 /* Alamofire */ = {
+		E53C56E226A2F08B00940E76 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53C56E126A2F08B00940E76 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = E53C56E126A2F08B00940E76 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		E53C56F026A3059800940E76 /* Kingfisher */ = {
+		E53C56F026A3059800940E76 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53C56EF26A3059800940E76 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = E53C56EF26A3059800940E76 /* RemoteSwiftPackageReference */;
 			productName = Kingfisher;
 		};
-		E53C56F326A307A600940E76 /* Realm */ = {
+		E53C56F326A307A600940E76 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = E53C56F226A307A600940E76 /* RemoteSwiftPackageReference */;
 			productName = Realm;
 		};
-		E53C56F526A307A600940E76 /* RealmSwift */ = {
+		E53C56F526A307A600940E76 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53C56F226A307A600940E76 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = E53C56F226A307A600940E76 /* RemoteSwiftPackageReference */;
 			productName = RealmSwift;
 		};
-		E53C56FB26A30DC200940E76 /* MBProgressHUD */ = {
+		E53C56FB26A30DC200940E76 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53C56FA26A30DC200940E76 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			package = E53C56FA26A30DC200940E76 /* RemoteSwiftPackageReference */;
 			productName = MBProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
