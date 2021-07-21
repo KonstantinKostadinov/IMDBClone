@@ -11,7 +11,7 @@ import Kingfisher
 class ViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
-    
+
     var topMovies: [TopMovies] = [TopMovies]()
     var movieId: String = ""
     var topTvs: [TopTVs] = [TopTVs]()
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.navigationController?.navigationBar.applyHorizontalGradientForPatientDetails()
+        self.navigationController?.navigationBar.applyGradientsOnNavigationBar()
         setupViews()
         loadData()
     }
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         destiantion.movieId = movieId
         destiantion.rating = movieRating
     }
+
     @IBAction func didTapSegmentedControl(_ sender: Any) {
         tableView.reloadData()
     }

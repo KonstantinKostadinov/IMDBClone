@@ -81,6 +81,7 @@ class PresentTopMovieTrailerViewController: UIViewController {
         descriptionLabel.text = " Description: \(trailer.videoDescription)"
         collectionView.delegate = self
         collectionView.dataSource = self
+        thumbmnailImageView.addOverlay()
 //        var layout = UICollectionViewFlowLayout()
 //        collectionView.collectionViewLayout = UICollectionViewLayout()
         

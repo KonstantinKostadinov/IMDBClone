@@ -41,6 +41,7 @@
 		E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */; };
 		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
 		E5D28A4A26A887E7007AE127 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */; };
+		E5D28A4C26A88FB2007AE127 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A4B26A88FB2007AE127 /* UIImageViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
 		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
 		E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5D28A4B26A88FB2007AE127 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				E53C56FD26A30DD100940E76 /* UIViewControllerExtensions.swift */,
 				E549D37326A462AE0058C8D1 /* NavigationBarExtensions.swift */,
 				E549D37526A462E70058C8D1 /* UIImageExtensions.swift */,
+				E5D28A4B26A88FB2007AE127 /* UIImageViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				E5836F0A26A5A71F00471AD3 /* SearchTableViewCell.swift in Sources */,
 				E5D28A4A26A887E7007AE127 /* ActorCollectionViewCell.swift in Sources */,
 				E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */,
+				E5D28A4C26A88FB2007AE127 /* UIImageViewExtensions.swift in Sources */,
 				E53C570726A3182D00940E76 /* Trailer.swift in Sources */,
 				E53C570326A30F4100940E76 /* SyncManager.swift in Sources */,
 				E53C56CD26A2ED4800940E76 /* SceneDelegate.swift in Sources */,

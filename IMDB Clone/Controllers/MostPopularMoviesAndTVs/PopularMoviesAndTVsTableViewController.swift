@@ -23,7 +23,7 @@ class PopularMoviesAndTVsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.applyHorizontalGradientForPatientDetails()
+        self.navigationController?.navigationBar.applyGradientsOnNavigationBar()
         setupView()
         loadData()
     }
@@ -92,49 +92,37 @@ class PopularMoviesAndTVsTableViewController: UITableViewController {
         }
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.showHUD(progressLabel: "Loading Data")
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            self.movieId = popularMovies[indexPath.row].id
+            self.rating = popularMovies[indexPath.row].imDbRating
+        case 1:
+            self.movieId = popularTVs[indexPath.row].id
+            self.rating = popularTVs[indexPath.row].imDbRating
+        default:
+            return
+        }
+        guard let _ = LocalDataManager.realm.objects(Trailer.self).filter("imDbId == %@",self.movieId).first else {
+            RequestManager.fetchTrailerForMovie(with: self.movieId) { _ in
+                self.dismissHUD(isAnimated: true)
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: Constants.segueIdentifier, sender: nil)
+                }
+            }
+            return
+        }
+        self.dismissHUD(isAnimated: true)
+        self.performSegue(withIdentifier: Constants.segueIdentifier, sender: nil)
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let destiantion = segue.destination as? PresentTopMovieTrailerViewController else {
+            return
+        }
+        destiantion.movieId = movieId
+        destiantion.rating = rating
     }
-    */
-
 }

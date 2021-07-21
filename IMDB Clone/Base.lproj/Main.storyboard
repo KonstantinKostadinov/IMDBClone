@@ -467,11 +467,11 @@
             </objects>
             <point key="canvasLocation" x="3169.5652173913045" y="235.71428571428569"/>
         </scene>
-        <!--Item-->
+        <!--Top-->
         <scene sceneID="efm-TX-jsL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bs1-f2-sAZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="BcV-MT-cZB"/>
+                    <tabBarItem key="tabBarItem" title="Top" image="star" catalog="system" selectedImage="star.fill" id="BcV-MT-cZB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SGQ-QN-rr0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -512,6 +512,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wen-OK-Asi">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="bs1-f2-sAZ" kind="relationship" relationship="viewControllers" id="0fN-iq-nP5"/>
@@ -527,7 +528,7 @@
         <scene sceneID="ycN-70-Pfq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ran-cK-cId" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trending" id="vuY-G4-6ho"/>
+                    <tabBarItem key="tabBarItem" title="Trending" image="record.circle" catalog="system" selectedImage="record.circle.fill" id="vuY-G4-6ho"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ulo-us-2Qr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -542,11 +543,11 @@
             </objects>
             <point key="canvasLocation" x="990" y="237"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="neQ-Ya-LSZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3n0-1O-ez5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dVc-I6-oeG"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="dVc-I6-oeG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RyG-pU-wAR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -563,9 +564,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1dp-e4-una"/>
+        <segue reference="bgc-Ok-EPG"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="record.circle" catalog="system" width="128" height="121"/>
+        <image name="record.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -47,10 +47,9 @@ extension UINavigationBar {
         self.layer.borderWidth = 0
     }
 
-    func applyHorizontalGradientForPatientDetails() {
-        let leftColor = UIColor(named: "Yasen Alexandrite Left") ?? UIColor.yellow
-        let rightColor = UIColor(named: "Yasen Alexandrite Right") ?? UIColor.yellow
-        self.applyHorizontalGragient(colors: [leftColor.cgColor, rightColor.cgColor],
+    func applyGradientsOnNavigationBar() {
+        let color = UIColor(red: 238/255, green: 198/255, blue: 72/255, alpha: 1)
+        self.applyHorizontalGragient(colors: [color.cgColor, color.cgColor],
                                      startPoint: CGPoint(x: 0.0,y: 0.5),
                                      endPoint: CGPoint(x: 1,y: 0.5),
                                      locations: [NSNumber(value: 0.5), NSNumber(value: 1.0)])
