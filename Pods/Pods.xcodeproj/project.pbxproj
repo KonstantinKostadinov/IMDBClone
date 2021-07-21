@@ -43,7 +43,7 @@
 		4407A00F53394336948B35BA0E0ACCCB /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB26F745EA35EC9660EF33A237BC8F9 /* Statistics.swift */; };
 		46BACA0BFC1EE1DB30823E515EB02CB7 /* ActivityListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9460A092061F1E910BC16DCAF3621E /* ActivityListRequest.swift */; };
 		4CB8162A8D0D0CCBA0720CF00320425E /* SearchVideoSyndicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE9E058A26C33030E0612EE78DE9B7 /* SearchVideoSyndicated.swift */; };
-		4D62C93193458A2B418A8E47E5F6B6D7 /* Pods-IMDB Clone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00844764A10DDD226B5A0ACD373993 /* Pods-IMDB Clone-dummy.m */; };
+		4D62C93193458A2B418A8E47E5F6B6D7 /* Pods-IMDB Clone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A27B69772FCE0C6F9064C05E0C112F0B /* Pods-IMDB Clone-dummy.m */; };
 		4E15B401F776985E9FD53E659684EAE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		54F60B9445D56B05F9899049CB32D99C /* QueryParameterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D1DA49D1A04AD0B4E0199E2B0C18DC /* QueryParameterable.swift */; };
 		5BBBC335CB2F487E3DA4983A91CE097C /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EA8755F7A0C0DE3E0F077B215EA6E /* BoolExtensions.swift */; };
@@ -88,11 +88,12 @@
 		D5975219E30202BFB1401DAD161E99A1 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653043FD8979675EAF74A24F927467B /* VideoList.swift */; };
 		D648CB6606913D9E267C041B06D228E7 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEF4F8C63B67B7F96C9D87E07ED490 /* ResponseError.swift */; };
 		D877287933B759B6744B9D2D5C64EC2E /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B1318437CC84BF6DAC74DC80EA897F /* PageInfo.swift */; };
+		DA8BC49CFB8D82500D6CD76D916E5657 /* Pods-IMDB CloneTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C040BF61351EA972418091D2123C22DC /* Pods-IMDB CloneTests-dummy.m */; };
 		DE086D9C9BD5076CD6ADD6334B2B2FDB /* SubscriptionsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D06CBBE4C95FB47B103972B236AD3 /* SubscriptionsListRequest.swift */; };
 		EA1AE8C9A7EF5B7BE31AAB815AD72998 /* ChannelSectionsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC59BD103D905B1803C7D04509C85D7 /* ChannelSectionsListRequest.swift */; };
 		EF17A1D26532866D7348A52D4D9FD9AD /* PlaylistsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0457B8481512F77EA06A9A39735F8 /* PlaylistsList.swift */; };
 		EFD8D48D0CA47CF6DA87156CA4BF6067 /* ResourceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB2218AE9F1A4A86AC33AD0C2BCF4D /* ResourceID.swift */; };
-		F33AFF1E3A2264735A7D15C6B38F6B84 /* Pods-IMDB Clone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB84E72F7A355FD171F99BB7C3F90C4 /* Pods-IMDB Clone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F33AFF1E3A2264735A7D15C6B38F6B84 /* Pods-IMDB Clone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05299FD3B8A2D0315D9A1D74392295A4 /* Pods-IMDB Clone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C7436A4DFDB5F2C5FE87C31227CDAE /* ResultOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A532DC0CD83538230D51F491495B867D /* ResultOrder.swift */; };
 		F4BE90F9CE450EDEF61FFA56A538F0ED /* CommentModerationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A7FE1BE58BA46BE660098E12EE193D /* CommentModerationStatus.swift */; };
 		F7ADABC1ECF61466949459C5B3C85074 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143D09704707C30E80FF7B9FCACD9F08 /* HTTPMethod.swift */; };
@@ -119,6 +120,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05299FD3B8A2D0315D9A1D74392295A4 /* Pods-IMDB Clone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMDB Clone-umbrella.h"; sourceTree = "<group>"; };
 		057D0D9C9BEBE851F8E1E448BA819E92 /* YoutubeKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubeKit.swift; path = Sources/YoutubeKit/YoutubeKit.swift; sourceTree = "<group>"; };
 		095EB13349ED573D400DF589577F8C61 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		0DD29B7C0D8AA1DA66D4F80305FFE97A /* SearchVideoDuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoDuration.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoDuration.swift; sourceTree = "<group>"; };
@@ -126,7 +128,6 @@
 		13D1DA49D1A04AD0B4E0199E2B0C18DC /* QueryParameterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParameterable.swift; path = Sources/YoutubeKit/Common/QueryParameterable.swift; sourceTree = "<group>"; };
 		143D09704707C30E80FF7B9FCACD9F08 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/YoutubeKit/API/HTTPMethod.swift; sourceTree = "<group>"; };
 		14707125CE3CA2210B69BAC1C59BB964 /* PlaylistsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaylistsListRequest.swift; path = Sources/YoutubeKit/API/Requests/PlaylistsListRequest.swift; sourceTree = "<group>"; };
-		175BFB0123E2CC111A9268C30BAD3C0C /* Pods-IMDB Clone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMDB Clone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A826203AAAA86F979F76EC4A73F2DAD /* MyRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MyRating.swift; path = Sources/YoutubeKit/API/Constants/MyRating.swift; sourceTree = "<group>"; };
 		21A7FE1BE58BA46BE660098E12EE193D /* CommentModerationStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentModerationStatus.swift; path = Sources/YoutubeKit/API/Constants/CommentModerationStatus.swift; sourceTree = "<group>"; };
 		25B42827F72CD2DFE6DA2881FCB50C74 /* player.html */ = {isa = PBXFileReference; includeInIndex = 1; name = player.html; path = Sources/YoutubeKit/player.html; sourceTree = "<group>"; };
@@ -134,12 +135,10 @@
 		28BF797DF117301C070333E6A5CBF8D0 /* SearchVideoLicense.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoLicense.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoLicense.swift; sourceTree = "<group>"; };
 		28CB2218AE9F1A4A86AC33AD0C2BCF4D /* ResourceID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceID.swift; path = Sources/YoutubeKit/API/Models/ResourceID.swift; sourceTree = "<group>"; };
 		2B8F14066B4D6D24968FADD63F7BF187 /* Thumbnail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thumbnail.swift; path = Sources/YoutubeKit/API/Models/Thumbnail.swift; sourceTree = "<group>"; };
-		2C00844764A10DDD226B5A0ACD373993 /* Pods-IMDB Clone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMDB Clone-dummy.m"; sourceTree = "<group>"; };
 		2D4343F2EA58DBCEDCD3BBAF96F7302C /* ApiSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApiSession.swift; path = Sources/YoutubeKit/API/ApiSession.swift; sourceTree = "<group>"; };
 		2F406240257700845CEBFDBC977AA2C4 /* SearchListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchListRequest.swift; path = Sources/YoutubeKit/API/Requests/SearchListRequest.swift; sourceTree = "<group>"; };
 		31029E109913596158BEE56A15844BF7 /* SearchVideoDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoDefinition.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoDefinition.swift; sourceTree = "<group>"; };
 		333516DE8589EE89D586F909B7A6165F /* VideoAbuseReportReasonsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoAbuseReportReasonsList.swift; path = Sources/YoutubeKit/API/Models/VideoAbuseReportReasonsList.swift; sourceTree = "<group>"; };
-		33383418CD5F2F2BE1A54BE530C62CE4 /* Pods-IMDB Clone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMDB Clone-Info.plist"; sourceTree = "<group>"; };
 		37FD2037646948667C6BAD0E74373DF2 /* SubscriptionsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionsList.swift; path = Sources/YoutubeKit/API/Models/SubscriptionsList.swift; sourceTree = "<group>"; };
 		3D3A5325C0584C209E9526D85CA7708D /* CommentTextFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentTextFormat.swift; path = Sources/YoutubeKit/API/Constants/CommentTextFormat.swift; sourceTree = "<group>"; };
 		3E664E8241737B31A3275287DFBC4823 /* VideoCategoryListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCategoryListRequest.swift; path = Sources/YoutubeKit/API/Requests/VideoCategoryListRequest.swift; sourceTree = "<group>"; };
@@ -149,25 +148,25 @@
 		4E58C55CF7BED5ED118347DA54430317 /* ChannelListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelListRequest.swift; path = Sources/YoutubeKit/API/Requests/ChannelListRequest.swift; sourceTree = "<group>"; };
 		5097A9E53F0050A6E8704D90B3CAE554 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtensions.swift; path = Sources/YoutubeKit/Extensions/DictionaryExtensions.swift; sourceTree = "<group>"; };
 		51002C21BF4FF093E79E5D5519848233 /* SearchSafeMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchSafeMode.swift; path = Sources/YoutubeKit/API/Constants/SearchSafeMode.swift; sourceTree = "<group>"; };
-		5296184CD597E8CAEC4B4CF1F2B1F221 /* Pods-IMDB Clone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMDB Clone-frameworks.sh"; sourceTree = "<group>"; };
 		52EDD0E0A131DEE78500295D5D40F85C /* YoutubeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoutubeKit.modulemap; sourceTree = "<group>"; };
 		53D0457B8481512F77EA06A9A39735F8 /* PlaylistsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaylistsList.swift; path = Sources/YoutubeKit/API/Models/PlaylistsList.swift; sourceTree = "<group>"; };
 		56E686DF60C0A59F9F3F7F090750A122 /* I18nRegionsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18nRegionsList.swift; path = Sources/YoutubeKit/API/Models/I18nRegionsList.swift; sourceTree = "<group>"; };
-		5EA78FBA2361FE148A7E82BF909EAE08 /* Pods-IMDB Clone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMDB Clone-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BC7C0ECBCBA0384DA9B9B111F4C81A1 /* Pods-IMDB Clone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMDB Clone-acknowledgements.plist"; sourceTree = "<group>"; };
 		5ECE9E058A26C33030E0612EE78DE9B7 /* SearchVideoSyndicated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoSyndicated.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoSyndicated.swift; sourceTree = "<group>"; };
 		655EA8755F7A0C0DE3E0F077B215EA6E /* BoolExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoolExtensions.swift; path = Sources/YoutubeKit/Extensions/BoolExtensions.swift; sourceTree = "<group>"; };
 		65EDE3530533B8C0BED34C6F73C7C873 /* YoutubeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubeKit-prefix.pch"; sourceTree = "<group>"; };
 		6653043FD8979675EAF74A24F927467B /* VideoList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoList.swift; path = Sources/YoutubeKit/API/Models/VideoList.swift; sourceTree = "<group>"; };
-		675D5DEE9DD7C64DDB114CEC8D3E06E8 /* Pods-IMDB Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB Clone.release.xcconfig"; sourceTree = "<group>"; };
 		684FF9AA881448868B9DD155A9F082F5 /* YTSwiftyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YTSwiftyConstants.swift; path = Sources/YoutubeKit/Player/YTSwiftyConstants.swift; sourceTree = "<group>"; };
 		706B6FFBA1F1AE9D5470BEABAFF3EA21 /* CommentList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentList.swift; path = Sources/YoutubeKit/API/Models/CommentList.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		739B8B241270D2D7994ECB2912FA544E /* VideoAbuseReportReasonsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoAbuseReportReasonsListRequest.swift; path = Sources/YoutubeKit/API/Requests/VideoAbuseReportReasonsListRequest.swift; sourceTree = "<group>"; };
 		75140781CCD5FF048DB147AAC87F78EE /* Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localized.swift; path = Sources/YoutubeKit/API/Models/Localized.swift; sourceTree = "<group>"; };
 		790334535008DE2333401FF2AB0878CD /* ActivityList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityList.swift; path = Sources/YoutubeKit/API/Models/ActivityList.swift; sourceTree = "<group>"; };
-		79DF900D473C784FA4D025C0D49124EA /* Pods-IMDB Clone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMDB Clone.modulemap"; sourceTree = "<group>"; };
 		80B016200249399480DA721B407A7704 /* GuideCategoriesListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuideCategoriesListRequest.swift; path = Sources/YoutubeKit/API/Requests/GuideCategoriesListRequest.swift; sourceTree = "<group>"; };
+		84021C290A76145F7FC70F1B7BF9522F /* Pods-IMDB CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB CloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		84AFA21A0D2E9C8C83ECE920F0800F22 /* YoutubeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubeKit.framework; path = YoutubeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		885E4560B9079ADF2062B4AA436B3715 /* libPods-IMDB CloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IMDB CloneTests.a"; path = "libPods-IMDB CloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		893A80FBC2C89A728E664E93FAC99FD0 /* Pods-IMDB CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8987FF1F6160F33A84D8246FAED35D58 /* YTSwiftyPlayerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YTSwiftyPlayerDelegate.swift; path = Sources/YoutubeKit/Player/YTSwiftyPlayerDelegate.swift; sourceTree = "<group>"; };
 		89956C4F8F75A9EB78C22062887A2603 /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Sources/YoutubeKit/API/Requestable.swift; sourceTree = "<group>"; };
 		8D071A101BDA5E99CC19F00D7B47A7DB /* SearchVideoEmbeddable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoEmbeddable.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoEmbeddable.swift; sourceTree = "<group>"; };
@@ -175,9 +174,12 @@
 		8E35C85373333FE67808537197C576B4 /* I18nRegionsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18nRegionsListRequest.swift; path = Sources/YoutubeKit/API/Requests/I18nRegionsListRequest.swift; sourceTree = "<group>"; };
 		8F546715B645A8364AAC1758B81090E0 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/YoutubeKit/Common/Result.swift; sourceTree = "<group>"; };
 		94CFA51665CD5637CC9E74631670F444 /* YoutubeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubeKit-dummy.m"; sourceTree = "<group>"; };
+		985C10416641A8FB009DD99CC4D8D649 /* Pods-IMDB CloneTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMDB CloneTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FC59BD103D905B1803C7D04509C85D7 /* ChannelSectionsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelSectionsListRequest.swift; path = Sources/YoutubeKit/API/Requests/ChannelSectionsListRequest.swift; sourceTree = "<group>"; };
 		A01934F2802962B0AB4C3E650766DBD9 /* I18nLanguagesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = I18nLanguagesList.swift; path = Sources/YoutubeKit/API/Models/I18nLanguagesList.swift; sourceTree = "<group>"; };
+		A27B69772FCE0C6F9064C05E0C112F0B /* Pods-IMDB Clone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMDB Clone-dummy.m"; sourceTree = "<group>"; };
+		A511A9EC0DDC7D082A7365F54BA75DBD /* Pods-IMDB Clone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMDB Clone.modulemap"; sourceTree = "<group>"; };
 		A532DC0CD83538230D51F491495B867D /* ResultOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultOrder.swift; path = Sources/YoutubeKit/API/Constants/ResultOrder.swift; sourceTree = "<group>"; };
 		A7609F287D9221AA227257F219EFA4A1 /* CaptionList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptionList.swift; path = Sources/YoutubeKit/API/Models/CaptionList.swift; sourceTree = "<group>"; };
 		A910C15490A6B0E4CBA43DBAD82693DF /* Snippet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snippet.swift; path = Sources/YoutubeKit/API/Models/Snippet.swift; sourceTree = "<group>"; };
@@ -188,13 +190,16 @@
 		ABD4D95434BB73B7DDC540C1328AE10F /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		AD11D54398C42A338E558534DFD927DB /* SearchEventType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchEventType.swift; path = Sources/YoutubeKit/API/Constants/SearchEventType.swift; sourceTree = "<group>"; };
 		AEB4275D1EBA8974CBE1158CBD89B7CF /* VideoCategoriesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCategoriesList.swift; path = Sources/YoutubeKit/API/Models/VideoCategoriesList.swift; sourceTree = "<group>"; };
+		B072CF7D04499CB018AD2DCA4D5B762E /* Pods-IMDB Clone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMDB Clone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B175860164A13984815A30A7A63E495B /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/YoutubeKit/API/Constants/Filter.swift; sourceTree = "<group>"; };
 		B91D06CBBE4C95FB47B103972B236AD3 /* SubscriptionsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionsListRequest.swift; path = Sources/YoutubeKit/API/Requests/SubscriptionsListRequest.swift; sourceTree = "<group>"; };
 		BC36D1E722DF21FA328F9D501CA69DAC /* ActivityInsertRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityInsertRequest.swift; path = Sources/YoutubeKit/API/Requests/ActivityInsertRequest.swift; sourceTree = "<group>"; };
 		BEA80234C0E0142FE64A2B0C2E99A3A5 /* SearchList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchList.swift; path = Sources/YoutubeKit/API/Models/SearchList.swift; sourceTree = "<group>"; };
 		BFE904B367AF82CD12BEC272489EE146 /* ChannelSectionsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelSectionsList.swift; path = Sources/YoutubeKit/API/Models/ChannelSectionsList.swift; sourceTree = "<group>"; };
-		C238D6F1B38003C85D04DA7EA13FA014 /* Pods-IMDB Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		C040BF61351EA972418091D2123C22DC /* Pods-IMDB CloneTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMDB CloneTests-dummy.m"; sourceTree = "<group>"; };
 		C334F81CAE580DFFB027824095CCEE9B /* YoutubeDataAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubeDataAPI.swift; path = Sources/YoutubeKit/YoutubeDataAPI.swift; sourceTree = "<group>"; };
+		C78CD68575A4C74B3C1A98B451FFDBF4 /* Pods-IMDB Clone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMDB Clone-Info.plist"; sourceTree = "<group>"; };
+		CA0896D196C1D865ECB5C162BC076869 /* Pods-IMDB Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CADD39F4F01A7EC07E550BA04F591D4A /* RequestableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestableExtensions.swift; path = Sources/YoutubeKit/Extensions/RequestableExtensions.swift; sourceTree = "<group>"; };
 		CDCC4E3DAAAB42681987CBF2B7EA5701 /* YoutubeKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubeKit-Info.plist"; sourceTree = "<group>"; };
 		CEF85B6FB53D15A54F100F9F3C2DE33D /* VideoCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCategory.swift; path = Sources/YoutubeKit/API/Constants/VideoCategory.swift; sourceTree = "<group>"; };
@@ -203,21 +208,30 @@
 		D461F7DA5EEE2810B3FB0E42909EEF4A /* Part.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Part.swift; path = Sources/YoutubeKit/API/Constants/Part.swift; sourceTree = "<group>"; };
 		D7A49686D4054918545005B246309D5C /* SearchVideoType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoType.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoType.swift; sourceTree = "<group>"; };
 		DB3208ADC9762BA341D3A2E8040EF4C3 /* GuideCategoriesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuideCategoriesList.swift; path = Sources/YoutubeKit/API/Models/GuideCategoriesList.swift; sourceTree = "<group>"; };
+		DFEE8F261DC47109EE69AAF97BCFE249 /* Pods-IMDB Clone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMDB Clone-frameworks.sh"; sourceTree = "<group>"; };
 		E443F7AD783E0513BFB5C800B65CE59E /* YoutubeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoutubeKit.debug.xcconfig; sourceTree = "<group>"; };
 		E5C7DFD76CFA7A125EA61344EF629DF7 /* SearchVideoDimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchVideoDimension.swift; path = Sources/YoutubeKit/API/Constants/SearchVideoDimension.swift; sourceTree = "<group>"; };
 		E5FFF5DAEE76C8BBDC8742C685659AE7 /* ChannelList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelList.swift; path = Sources/YoutubeKit/API/Models/ChannelList.swift; sourceTree = "<group>"; };
 		E68BA91B1CBFD101E706F48D9F97737F /* CommentListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentListRequest.swift; path = Sources/YoutubeKit/API/Requests/CommentListRequest.swift; sourceTree = "<group>"; };
 		E6B1318437CC84BF6DAC74DC80EA897F /* PageInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageInfo.swift; path = Sources/YoutubeKit/API/Models/PageInfo.swift; sourceTree = "<group>"; };
+		E80D780361087DAECD190934F57B03BF /* Pods-IMDB Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMDB Clone.release.xcconfig"; sourceTree = "<group>"; };
 		ED9460A092061F1E910BC16DCAF3621E /* ActivityListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityListRequest.swift; path = Sources/YoutubeKit/API/Requests/ActivityListRequest.swift; sourceTree = "<group>"; };
 		EEB26F745EA35EC9660EF33A237BC8F9 /* Statistics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statistics.swift; path = Sources/YoutubeKit/API/Models/Statistics.swift; sourceTree = "<group>"; };
 		F0F88750EE8FB659B5AB61A34F66509B /* CommentThreadsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentThreadsList.swift; path = Sources/YoutubeKit/API/Models/CommentThreadsList.swift; sourceTree = "<group>"; };
 		F25E33E194FD0CA93E44B76FFA54B88D /* PlaylistItemsListRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaylistItemsListRequest.swift; path = Sources/YoutubeKit/API/Requests/PlaylistItemsListRequest.swift; sourceTree = "<group>"; };
 		F310E501455F3483F6441F5E16FF1743 /* SearchResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchResourceType.swift; path = Sources/YoutubeKit/API/Constants/SearchResourceType.swift; sourceTree = "<group>"; };
-		FAB84E72F7A355FD171F99BB7C3F90C4 /* Pods-IMDB Clone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMDB Clone-umbrella.h"; sourceTree = "<group>"; };
+		FDAA024BBDF0819E371DB64507A8DBDD /* Pods-IMDB CloneTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMDB CloneTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FDD2E5B962BF1488EC1244A32AAABB4F /* PlaylistItemsList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaylistItemsList.swift; path = Sources/YoutubeKit/API/Models/PlaylistItemsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C488D19607490E688F82BF55A50AB953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D35EF64BA1D0E7E5C7F6B558307605C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,21 +383,36 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		9691326FD3D995589024C51CFE7FC251 /* Pods-IMDB Clone */ = {
+		7E7A60C8F7B21F34C11427B81ED12083 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79DF900D473C784FA4D025C0D49124EA /* Pods-IMDB Clone.modulemap */,
-				175BFB0123E2CC111A9268C30BAD3C0C /* Pods-IMDB Clone-acknowledgements.markdown */,
-				5EA78FBA2361FE148A7E82BF909EAE08 /* Pods-IMDB Clone-acknowledgements.plist */,
-				2C00844764A10DDD226B5A0ACD373993 /* Pods-IMDB Clone-dummy.m */,
-				5296184CD597E8CAEC4B4CF1F2B1F221 /* Pods-IMDB Clone-frameworks.sh */,
-				33383418CD5F2F2BE1A54BE530C62CE4 /* Pods-IMDB Clone-Info.plist */,
-				FAB84E72F7A355FD171F99BB7C3F90C4 /* Pods-IMDB Clone-umbrella.h */,
-				C238D6F1B38003C85D04DA7EA13FA014 /* Pods-IMDB Clone.debug.xcconfig */,
-				675D5DEE9DD7C64DDB114CEC8D3E06E8 /* Pods-IMDB Clone.release.xcconfig */,
+				885E4560B9079ADF2062B4AA436B3715 /* libPods-IMDB CloneTests.a */,
+				119D03B6FC9FCCBB4BAA4BFA4D0BD387 /* Pods_IMDB_Clone.framework */,
+				84AFA21A0D2E9C8C83ECE920F0800F22 /* YoutubeKit.framework */,
 			);
-			name = "Pods-IMDB Clone";
-			path = "Target Support Files/Pods-IMDB Clone";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E9E27EEFA6C4CF763CE40743708FFCB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8446974BF4E20DB16CA8260B984FA0A /* Pods-IMDB Clone */,
+				8EB6CEB83F2166F15C88C846C6D3F258 /* Pods-IMDB CloneTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8EB6CEB83F2166F15C88C846C6D3F258 /* Pods-IMDB CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDAA024BBDF0819E371DB64507A8DBDD /* Pods-IMDB CloneTests-acknowledgements.markdown */,
+				985C10416641A8FB009DD99CC4D8D649 /* Pods-IMDB CloneTests-acknowledgements.plist */,
+				C040BF61351EA972418091D2123C22DC /* Pods-IMDB CloneTests-dummy.m */,
+				893A80FBC2C89A728E664E93FAC99FD0 /* Pods-IMDB CloneTests.debug.xcconfig */,
+				84021C290A76145F7FC70F1B7BF9522F /* Pods-IMDB CloneTests.release.xcconfig */,
+			);
+			name = "Pods-IMDB CloneTests";
+			path = "Target Support Files/Pods-IMDB CloneTests";
 			sourceTree = "<group>";
 		};
 		A913B39452D055B7BF6F25A2F9D781D9 /* Support Files */ = {
@@ -396,12 +425,21 @@
 			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
-		CA5BC79CF29E6EE3FF9D19ACCD75A890 /* Targets Support Files */ = {
+		B8446974BF4E20DB16CA8260B984FA0A /* Pods-IMDB Clone */ = {
 			isa = PBXGroup;
 			children = (
-				9691326FD3D995589024C51CFE7FC251 /* Pods-IMDB Clone */,
+				A511A9EC0DDC7D082A7365F54BA75DBD /* Pods-IMDB Clone.modulemap */,
+				B072CF7D04499CB018AD2DCA4D5B762E /* Pods-IMDB Clone-acknowledgements.markdown */,
+				5BC7C0ECBCBA0384DA9B9B111F4C81A1 /* Pods-IMDB Clone-acknowledgements.plist */,
+				A27B69772FCE0C6F9064C05E0C112F0B /* Pods-IMDB Clone-dummy.m */,
+				DFEE8F261DC47109EE69AAF97BCFE249 /* Pods-IMDB Clone-frameworks.sh */,
+				C78CD68575A4C74B3C1A98B451FFDBF4 /* Pods-IMDB Clone-Info.plist */,
+				05299FD3B8A2D0315D9A1D74392295A4 /* Pods-IMDB Clone-umbrella.h */,
+				CA0896D196C1D865ECB5C162BC076869 /* Pods-IMDB Clone.debug.xcconfig */,
+				E80D780361087DAECD190934F57B03BF /* Pods-IMDB Clone.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-IMDB Clone";
+			path = "Target Support Files/Pods-IMDB Clone";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -410,8 +448,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				6076BF076407E4B63ECDF3CE3E96A74F /* Pods */,
-				DA8F8CA76358F957009DC5A889187359 /* Products */,
-				CA5BC79CF29E6EE3FF9D19ACCD75A890 /* Targets Support Files */,
+				7E7A60C8F7B21F34C11427B81ED12083 /* Products */,
+				8E9E27EEFA6C4CF763CE40743708FFCB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,15 +461,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA8F8CA76358F957009DC5A889187359 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				119D03B6FC9FCCBB4BAA4BFA4D0BD387 /* Pods_IMDB_Clone.framework */,
-				84AFA21A0D2E9C8C83ECE920F0800F22 /* YoutubeKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -440,6 +469,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33AFF1E3A2264735A7D15C6B38F6B84 /* Pods-IMDB Clone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C79B110B85F56C5FB9B6070EF20051 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +507,23 @@
 			productName = YoutubeKit;
 			productReference = 84AFA21A0D2E9C8C83ECE920F0800F22 /* YoutubeKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		07042F23BCA73788BB100BEC8E1733DA /* Pods-IMDB CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38661CF3B3502D1D84A1C552AE4AEDC /* Build configuration list for PBXNativeTarget "Pods-IMDB CloneTests" */;
+			buildPhases = (
+				61C79B110B85F56C5FB9B6070EF20051 /* Headers */,
+				AA5B9E9FF491E2748AF3FDDDECF16661 /* Sources */,
+				C488D19607490E688F82BF55A50AB953 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-IMDB CloneTests";
+			productName = "Pods-IMDB CloneTests";
+			productReference = 885E4560B9079ADF2062B4AA436B3715 /* libPods-IMDB CloneTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		E5D4D989391624D86016B0EB5A9106DF /* Pods-IMDB Clone */ = {
 			isa = PBXNativeTarget;
@@ -510,11 +563,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DA8F8CA76358F957009DC5A889187359 /* Products */;
+			productRefGroup = 7E7A60C8F7B21F34C11427B81ED12083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E5D4D989391624D86016B0EB5A9106DF /* Pods-IMDB Clone */,
+				07042F23BCA73788BB100BEC8E1733DA /* Pods-IMDB CloneTests */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 				061AEBDE957EC6584860213B1BEB14B3 /* YoutubeKit */,
 			);
@@ -545,6 +599,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D62C93193458A2B418A8E47E5F6B6D7 /* Pods-IMDB Clone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5B9E9FF491E2748AF3FDDDECF16661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8BC49CFB8D82500D6CD76D916E5657 /* Pods-IMDB CloneTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,7 +745,7 @@
 		};
 		16A03A4576F4B46085CD567D64B49AAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 675D5DEE9DD7C64DDB114CEC8D3E06E8 /* Pods-IMDB Clone.release.xcconfig */;
+			baseConfigurationReference = E80D780361087DAECD190934F57B03BF /* Pods-IMDB Clone.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -716,6 +778,49 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53F2B1B7C65ABEC67C23774B7F5615E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893A80FBC2C89A728E664E93FAC99FD0 /* Pods-IMDB CloneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E2753BCDE00FF70E1C435B0622475E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84021C290A76145F7FC70F1B7BF9522F /* Pods-IMDB CloneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -756,7 +861,7 @@
 		};
 		92732EE8B7A2C74FE6589592CA9C1A7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C238D6F1B38003C85D04DA7EA13FA014 /* Pods-IMDB Clone.debug.xcconfig */;
+			baseConfigurationReference = CA0896D196C1D865ECB5C162BC076869 /* Pods-IMDB Clone.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -969,6 +1074,15 @@
 			buildConfigurations = (
 				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
 				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38661CF3B3502D1D84A1C552AE4AEDC /* Build configuration list for PBXNativeTarget "Pods-IMDB CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F2B1B7C65ABEC67C23774B7F5615E6 /* Debug */,
+				5E2753BCDE00FF70E1C435B0622475E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
