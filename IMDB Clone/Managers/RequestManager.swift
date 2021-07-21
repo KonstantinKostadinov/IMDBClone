@@ -48,6 +48,10 @@ extension API {
     class func movieTrailer(with id: String) -> API {
         API("YouTubeTrailer/k_2y9cl6jb/\(id)")
     }
+
+    class func fullCast(from id: String) -> API {
+        API("FullCast/k_2y9cl6jb/\(id)")
+    }
 }
 
 class RequestManager: NSObject {
@@ -197,7 +201,7 @@ class RequestManager: NSObject {
         Alamofire.request(API.movieTrailer(with: id), method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             updateDataQueue.async {
                 guard response.error == nil else {
-                    completion?(nil,response.error)
+                    completion?(nil, response.error)
                     return
                 }
 
@@ -211,12 +215,35 @@ class RequestManager: NSObject {
                     return
                 }
 
-
                 let trailer = MovieTrailer(json: dict)
                 let realm = LocalDataManager.backgroundRealm(queue: updateDataQueue)
                 LocalDataManager.addData(trailer, update: true, realm: realm)
                 completion?(trailer, nil)
             }
+        }
+    }
+
+    class func fetchCast(with id: String, completion: ((_ dicrectors: Array<[String:Any]>?, _ actors: Array<[String:Any]>?, _ error: Error?)->Void)? = nil) {
+        Alamofire.request(API.fullCast(from: id), method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+
+            guard response.error == nil else {
+                completion?(nil, nil, response.error)
+                return
+            }
+
+            guard response.result.error == nil else {
+                completion?(nil, nil, response.result.error)
+                return
+            }
+            
+            guard let response = response.result.value as? [String: Any],
+                  let directorsDict = response["directors"] as? [String: Any],
+                  let directors = directorsDict["items"] as? Array<[String:Any]>,
+                  let actorsDict = response["actors"] as? Array<[String:Any]> else {
+                completion?(nil,nil, IMDBError.cannotParseJSON)
+                return
+            }
+            completion?(directors, actorsDict, nil)
         }
     }
 }

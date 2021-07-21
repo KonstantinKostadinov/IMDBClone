@@ -40,6 +40,7 @@
 		E5836F0A26A5A71F00471AD3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */; };
 		E5857A9026A44DC9004C1C53 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */; };
 		E5857A9226A44E28004C1C53 /* MostPopularTVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */; };
+		E5D28A4A26A887E7007AE127 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		E5857A8F26A44DC9004C1C53 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
 		E5857A9126A44E28004C1C53 /* MostPopularTVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTVs.swift; sourceTree = "<group>"; };
+		E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				E53C56EA26A2FB4700940E76 /* TopMovieTableViewCell.swift */,
 				E5836F0926A5A71F00471AD3 /* SearchTableViewCell.swift */,
+				E5D28A4926A887E7007AE127 /* ActorCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				E53C56CB26A2ED4800940E76 /* AppDelegate.swift in Sources */,
 				E53C570126A30E6300940E76 /* LoadingViewController.swift in Sources */,
 				E5836F0A26A5A71F00471AD3 /* SearchTableViewCell.swift in Sources */,
+				E5D28A4A26A887E7007AE127 /* ActorCollectionViewCell.swift in Sources */,
 				E549D37226A460410058C8D1 /* SearchViewController.swift in Sources */,
 				E53C570726A3182D00940E76 /* Trailer.swift in Sources */,
 				E53C570326A30F4100940E76 /* SyncManager.swift in Sources */,
